@@ -1,106 +1,195 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: 'Nunito', sans-serif;
-  }
-    .fondoXcoti{
-    background-image: url("../../img/FondoXcoti.jpg");
-    background-position: center;
-    background-size: cover;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    height: 758px;
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
     }
 
+    .fondoXcoti {
+      position: relative;
+      background-image: url("../../img/FondoXcoti.jpg");
+      background-position: center;
+      background-size: cover;
+      height: 758px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    
+    .fondoXcoti::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.5); /* Cambia el color y la opacidad según necesites */
+      z-index: 1; /* Asegura que esta capa esté por debajo del contenido */
+    }
+    
+    .fondoXcoti .container {
+      position: relative;
+      z-index: 2; /* Coloca el contenido por encima de la capa de opacidad */
+    }
+    
+
     .hero-section {
-        background-image: url("../../img/FondoXcoti.jpg");
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        color: white;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-      }
+      background-image: url("../../img/FondoXcoti.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
     .custom-navbar {
-    background-color: white;
+      border: 2px solid #e0dfdf; /* Ancho, estilo y color del borde */
+      background-color: white;
     }
 
     .navbar-brand span {
-        color: black;
-        font-size: 2.5rem;
-        margin-left: 10px;
-        font-family: 'Roboto', sans-serif;
+      color: black;
+      font-size: 2.5rem;
+      margin-left: 10px;
+      font-family: 'Roboto', sans-serif;
     }
 
     .navbar-brand img {
-        margin-right: 1px; 
+      margin-right: 1px; 
     }
 
     .navbar-brand {
-        display: flex;
-        align-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-link {
+      color: black;
+      text-decoration: none;
+      padding: 0 10px;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
     }
 
     .position-absolute {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 2rem;
-        background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor visibilidad */
-        padding: 10px;
-        border-radius: 5px;
-    }       
-      .highlight {
-        color: #8C30F5;
-        font-weight: 800;
-      }
-      h1 .highlight {
-        display: block;
-        font-weight: 800;
-      }
-      
-      .btn-primary {
-        background-color: #8C30F5;
-        border-color: #8C30F5;
-      }
-      
-      .btn-primary:hover {
-        background-color: #8C30F5;
-        border-color: #8C30F5;
-      }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+    }
 
-      .service-section {
-        background-color: #f8f9fa;
-        height: 632px;
-      }
-      
-      .service-section .text-primary {
-        color: #a657ff !important;
-        font-weight: 900;
-      }
-      
-      .service-section p {
-        margin-bottom: 1rem;
-      }
-      
-      .service-section i {
-        margin-right: 0.5rem;
-      }
+    .highlight {
+      color: #8C30F5;
+      font-weight: 800;
+    }
 
-      h1 {
-        font-weight: 800;
-      }
-      .service-h2 {
-        font-weight: 800;
-        font-size: 16px;
-      }
-      
-      .service-h3{
-        font-weight: 800;
-        font-size: 30px;
-      }
+    h1 .highlight {
+      display: block;
+      font-weight: 800;
+    }
 
-      .presentation-section{
-        background-color: #f8f9fa;
-        height: 632px;
-      }
+    .btn-primary {
+      background-color: #8C30F5;
+      border-color: #8C30F5;
+    }
+
+    .btn-primary:hover {
+      background-color: #8C30F5;
+      border-color: #8C30F5;
+    }
+
+    .service-section {
+      background-color: #f8f9fa;
+      height: 632px;
+    }
+
+    .service-section .text-primary {
+      color: #a657ff !important;
+      font-weight: 900;
+    }
+
+    .service-section p {
+      margin-bottom: 1rem;
+    }
+
+    .service-section i {
+      margin-right: 0.5rem;
+    }
+
+    h1 {
+      font-weight: 800;
+    }
+
+    .service-h2 {
+      font-weight: 800;
+      font-size: 16px;
+    }
+
+    .service-h3 {
+      font-weight: 800;
+      font-size: 30px;
+    }
+
+    .presentation-section {
+      background-color: #f8f9fa;
+      height: 632px;
+    }
+
+    .presentation-section {
+  padding: 2em 0;
+}
+
+.presentation-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.presentation-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2em; /* Espaciado entre filas */
+}
+
+.presentation-section .text-content {
+  margin: auto;
+}
+
+.presentation-section .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation-section .image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Añade esquinas redondeadas si es necesario */
+}
+
+.presentation-section .headline {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+/* Orden para dispositivos medianos y grandes */
+@media (min-width: 768px) {
+  .presentation-section .order-md-1 {
+    order: 1;
+  }
+  
+  .presentation-section .order-md-2 {
+    order: 2;
+  }
+}
