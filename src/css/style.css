@@ -109,7 +109,7 @@
     }
 
     .service-section {
-      background-color: #f8f9fa;
+      background-color: #FFFFFF;
       height: 632px;
     }
 
@@ -182,7 +182,37 @@
   font-weight: bold;
   margin-bottom: 1em;
 }
+.content-section {
+  padding: 60px 0;
+  height: 632px;
+  flex: 1;
+}
 
+.content-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.content-section .text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content-section h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  font-weight: 400;
+  color: #666;
+}
+.content {
+  flex: 1;
+}
 /* Orden para dispositivos medianos y grandes */
 @media (min-width: 768px) {
   .presentation-section .order-md-1 {
@@ -205,6 +235,7 @@
   background-color: #0B0D17;
   color: white;
   padding: 20px 0;
+  height: 112px;
 }
 .footer .brand {
   display: flex;
