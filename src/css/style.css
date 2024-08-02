@@ -109,7 +109,7 @@
     }
 
     .service-section {
-      background-color: #f8f9fa;
+      background-color: #FFFFFF;
       height: 632px;
     }
 
@@ -182,7 +182,37 @@
   font-weight: bold;
   margin-bottom: 1em;
 }
+.content-section {
+  padding: 60px 0;
+  height: 632px;
+  flex: 1;
+}
 
+.content-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.content-section .text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content-section h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  font-weight: 400;
+  color: #666;
+}
+.content {
+  flex: 1;
+}
 /* Orden para dispositivos medianos y grandes */
 @media (min-width: 768px) {
   .presentation-section .order-md-1 {
@@ -193,90 +223,25 @@
     order: 2;
   }
 }
-
-.carrousel-section {
-  position: relative;
-  background: #ffffff; /* Fondo blanco */
-  padding: 2em 0;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  overflow: hidden;
-}
-
-.carrousel-section .container {
-  position: relative;
-  z-index: 2;
-}
-
-.carrousel-section::before {
-  content: '';
-  position: absolute;
-  bottom: -50px; /* Ajuste para posicionar correctamente */
-  left: 0;
-  right: 0;
-  height: 100px;
-  background: #a68bc5;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.carousel-inner {
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.carousel-inner img {
-  width: 100%;
-  height: 400px; /* Altura fija para las imágenes */
-  object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
-  border-radius: 20px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1);
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%;
-}
-
-.carousel-indicators {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+.wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
-.carousel-indicators li {
-  background-color: #a68bc5;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
+.content {
+  flex: 1;
 }
-
-.carousel-indicators .active {
-  background-color: #7b4ca3;
+.footer {
+  background-color: #0B0D17;
+  color: white;
+  padding: 20px 0;
+  height: 112px;
 }
-
-@media (max-width: 768px) {
-  .carrousel-section .carousel-inner img {
-      height: 300px; /* Ajuste para dispositivos más pequeños */
-  }
-
-  .carousel-control-prev,
-  .carousel-control-next {
-      width: 10%;
-  }
+.footer .brand {
+  display: flex;
+  align-items: center;
 }
-
-@media (max-width: 375px) { /* Ajuste específico para iPhone 15 */
-  .carrousel-section .carousel-inner img {
-      height: 250px; /* Ajuste para iPhone 15 */
-  }
+.footer .brand img {
+  height: 40px;
+  margin-right: 10px;
 }
-
