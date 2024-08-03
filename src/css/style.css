@@ -245,3 +245,110 @@
   height: 40px;
   margin-right: 10px;
 }
+
+.main-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+.background-container {
+  background: linear-gradient(135deg, rgba(196, 149, 249, 1) 0%, rgba(166, 139, 198, 1) 100%);
+  border-radius: 0 60px 0px 60px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 20px;
+  left: 51%;
+  transform: translateX(-50%);
+  width: 107%;
+  height: 105%;
+  z-index: 1;
+}
+.carousel-container {
+  position: relative;
+  z-index: 2;
+}
+.carousel-inner {
+  border-radius: 0 20px 20px 0;
+  overflow: hidden;
+}
+.carousel-item img {
+  height: cover;
+  object-fit: cover;
+  width: 100%;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #6c63ff;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  content: '';
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+}
+.carousel-control-prev-icon::after {
+  transform: rotate(135deg);
+  margin-left: -3px;
+}
+.carousel-control-next-icon::after {
+  transform: rotate(-45deg);
+  margin-right: -3px;
+}
+.custom-carousel {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-left: -4rem;
+  margin-top: -2rem;
+  border: 1px solid black;
+}
+
+/* Responsivo para iPhone 15 Pro */
+@media (max-width: 430px) {
+  .text-section h2 {
+      font-size: 1.8rem;
+  }
+  .text-section p {
+      font-size: 1rem;
+  }
+  .carousel-item img {
+      height: 40rem;
+  }
+  .main-container {
+      padding: 10px;
+  }
+  .background-container {
+      top: 10px;
+  }
+}
+
+/* Responsivo para MacBook 14 Pro */
+@media (min-width: 1400px) {
+  .text-section h2 {
+      font-size: 3rem;
+  }
+  .text-section p {
+      font-size: 1.2rem;
+  }
+  .carousel-item img {
+      height: 300px;
+  }
+  .main-container {
+      max-width: 1000px;
+  }
+}
