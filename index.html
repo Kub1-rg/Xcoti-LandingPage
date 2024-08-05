@@ -10,57 +10,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
     <link href="./src/css/style.css" rel="stylesheet">
     <style>
-        .custom-section {
-            padding: 50px 0;
-        }
-        .text-section {
-            margin-top: 20px;
-        }
-        .text-section h2 {
-            font-size: 2.5rem;
-            color: #333;
-        }
-        .text-section p {
-            font-size: 1.1rem;
-            color: #666;
-        }
-        .rounded-img {
-            border-radius: 10px;
-        }
-        .distance-img2{
-          margin-top: 40px;
-          margin-left: 40px;
-        }
-        .close-gap {
-            margin-top: 10px;
-        }
-        .final-section {
-          margin-top: 11rem;
-            background-color: white;
-            padding: 60px 0;
-        }
-        .final-section h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-        .final-section .subtitle {
-            font-size: 1.2rem;
-            color: #777;
-        }
-        .contact-us-btn {
-            background-color: #7A3FDB;
-            color: white;
-            border-radius: 20px;
-            padding: 10px 20px;
-            font-size: 1.1rem;
-            margin-top: 20px;
-        }
-        .qr-code {
-            max-width: 200px;
-        }
-        .imac-image {
-            max-width: 100%;
-        }
     </style>
 </head>
 <body>
@@ -69,10 +18,10 @@
         <div class="d-flex">
             <ul class="navbar-nav d-flex flex-row align-items-center">
                 <li class="nav-item me-3">
-                    <a class="nav-link" href=" https://wa.me/+593969840240" target="_blank">Contact</a>
+                    <a class="nav-link lead d-none d-lg-block" href=" https://wa.me/+593969840240" target="_blank">Contact</a>
                 </li>
                 <li class="nav-item me-3">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link lead d-none d-lg-block" href="#">Home</a>
                 </li>
             </ul>
         </div>
@@ -84,12 +33,24 @@
     </div>
   </nav>
 
-  <div class="fondoXcoti d-flex align-items-center justify-content-center">
+  <!--<div class="fondoXcoti d-flex align-items-center justify-content-center">
       <div class="container text-center">
         <h1>Streamline Your <span class="highlight">Naval Projects</span></h1>
         <p style="font-weight: 400;">Efficient and Accessible Digital Shipbuilding for Enhanced Performance and Innovation</p>
         <a href="#" class="btn btn-primary btn-lg">Get in touch</a>
       </div>
+  </div>-->
+  <div class="fondoXcoti d-flex align-items-center justify-content-center">
+    <div class="container text-center">
+      <h1 class="display-4 display-md-3 display-lg-1">Streamline Your <span class="highlight">Naval Projects</span></h1>
+      <!-- Párrafo solo visible en pantallas grandes -->
+    <p class="lead d-none d-lg-block">Efficient and Accessible Digital Shipbuilding for Enhanced Performance and Innovation</p>
+    
+    <!-- Párrafo solo visible en móviles -->
+    <p class="d-block d-lg-none">New App that leads to an Efficient and Accessible Digital Shipbuilding for Enhanced Performance and Innovation</p>
+
+      <a href="#" class="btn btn-primary btn-lg">Get in touch</a>
+    </div>
   </div>
 
   <div class="service-section py-5">
@@ -98,39 +59,41 @@
           <div class="col-lg-4 d-flex flex-column justify-content-center">
             <h2 class="text-primary service-h2">EVERYTHING YOU NEED</h2>
             <h3 class="service-h3">All-in-one Service</h3>
-            <p style="color: #6B7280;">Your Comprehensive Solution for Digital Shipbuilding, Engineering, and Project Management</p>
+            <p class="lead d-none d-lg-block" style="color: #6B7280;">Your Comprehensive Solution for Digital Shipbuilding, Engineering, and Project Management</p>
           </div>
           <div class="col-lg-8">
             <div class="row">
               <div class="col-md-6 mb-4">
                 <p><i class="bi bi-check text-primary"></i> <strong>Invite team members</strong></p>
-                <p>Easily add project managers, engineers, and other team members to collaborate on your naval construction projects.</p>
+                <p class="lead d-none d-lg-block">Easily add project managers, engineers, and other team members to collaborate on your naval construction projects.</p>
               </div>
               <div class="col-md-6 mb-4">
                 <p><i class="bi bi-check text-primary"></i> <strong>Process Reporting</strong></p>
-                <p>Generate comprehensive progress reports and share them with stakeholders to keep everyone informed.</p>
+                <p class="lead d-none d-lg-block">Generate comprehensive progress reports and share them with stakeholders to keep everyone informed.</p>
               </div>
               <div class="col-md-6 mb-4">
                 <p><i class="bi bi-check text-primary"></i> <strong>Unified Communication Platform</strong></p>
-                <p>Manage feedback from a single, integrated mailbox to streamline communication.</p>
+                <p class="lead d-none d-lg-block">Manage feedback from a single, integrated mailbox to streamline communication.</p>
               </div>
               <div class="col-md-6 mb-4">
                 <p><i class="bi bi-check text-primary"></i> <strong>Secure Data Storage</strong></p>
-                <p>Ensure your project data is protected with high-level security measures and encrypted storage solutions.</p>
+                <p class="lead d-none d-lg-block">Ensure your project data is protected with high-level security measures and encrypted storage solutions.</p>
               </div>
               <div class="col-md-6 mb-4">
                 <p><i class="bi bi-check text-primary"></i> <strong>Task and Deadline Tracking</strong></p>
-                <p>Monitor your progress to ensure projects stay on track.</p>
+                <p class="lead d-none d-lg-block">Monitor your progress to ensure projects stay on track.</p>
               </div>
               <div class="col-md-6 mb-4">
                 <p><i class="bi bi-check text-primary"></i> <strong>3D Digital Object and Visualization</strong></p>
-                <p>Navigate and view 3D models of ship components and metadata for better accuracy and planning.</p>
+                <p class="lead d-none d-lg-block">Navigate and view 3D models of ship components and metadata for better accuracy and planning.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
   </div>
+
+
   <section class="custom-section">
     <div class="container">
         <div class="row align-items-center">
@@ -145,11 +108,6 @@
               </div>
             </div>
         </div>
-        <!--<div class="row align-items-center close-gap">
-            <div class="col-md-12 d-flex justify-content-center">
-                <img src="./img/Imagen2.png" alt="Image 2" class="img-fluid rounded-img">
-            </div>
-        </div>-->
         <div class="row align-items-center mt-5 py-5">
             <div class="col-md-6 d-flex justify-content-center ">
                 <img src="./img/Imagen3.png" alt="Image 3" class="img-fluid rounded-img">
@@ -169,7 +127,6 @@
     <h2>Here are some of our collaborations</h2>
     <p>Discover the countries/regions we've proudly worked</p>
 </div>
-<br>
 <div class="main-container">
     <div class="background-container"></div>
     <div class="carousel-container">
@@ -213,11 +170,6 @@
         </div>
     </div>
 </div>
-<br>
-<!-- Fin de la seccion del contenedor -->
-  <br>
-<!-- Fin de la seccion del contenedor -->
-
 
 
   <div class="container final-section text-center">
