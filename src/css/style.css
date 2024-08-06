@@ -317,6 +317,7 @@
   border: 1px solid black;
 }
 
+
 /* Responsivo para iPhone 15 Pro */
 /* Ajustes específicos para móviles */
 @media (max-width: 767.98px) {
@@ -335,6 +336,26 @@
 
   .custom-section p{
     padding: 50px 0;
+  }
+
+  .service-h2, .service-h3 {
+    text-align: left;
+  }
+  .lead {
+    font-size: 1rem;
+    text-align: left; /* Alinea el texto al centro en dispositivos móviles */
+  }
+  .service-section p {
+    text-align: left !important; /* Alinea todos los párrafos al centro en dispositivos móviles */
+    padding-top: 10px !important;
+  }
+  .service-section .strong{
+    margin-bottom: 1rem !important;
+  }
+  .service-section .col-md-6 {
+    margin-bottom: 1px !important; /* Reduce the space between each block */
+    height: 30px !important;
+    margin-left: 20px !important;
   }
 }
 
@@ -379,7 +400,7 @@ margin-left: 40px;
   margin-top: 10px;
 }
 .final-section {
-margin-top: 11rem;
+  margin-top: 11rem;
   background-color: white;
   padding: 60px 0;
 }
@@ -404,4 +425,31 @@ margin-top: 11rem;
 }
 .imac-image {
   max-width: 100%;
+}
+.custom-section-mobile {
+  background-color: #fff !important;
+  padding: 2rem 0 !important;
+}
+
+.custom-section-mobile h4{
+  color: #6A1B9A !important;
+  font-weight: bold !important;
+  margin-bottom: 1rem !important;
+}
+
+.custom-section-mobile h2 {
+  color: #424242 !important;
+  font-weight: bold !important;
+  margin-bottom: 1rem !important;
+}
+
+.custom-section-mobile p {
+  color: #6B7280 !important;
+  font-size: 1rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.custom-section-mobile img {
+  max-width: 100% !important;
+  height: auto !important;
 }
