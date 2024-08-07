@@ -1,7 +1,7 @@
     body, html {
       height: 100%;
       margin: 0;
-      font-family: 'Nunito', sans-serif;
+      font-family: 'Nunito', sans-serif !important;
     }
 
     .fondoXcoti {
@@ -324,6 +324,7 @@
   .fondoXcoti {
     padding: 20px;
     text-align: center;
+    height: 507px;
   }
 
   .fondoXcoti h1 {
@@ -432,7 +433,7 @@ margin-left: 40px;
 }
 
 .custom-section-mobile h4{
-  color: #6A1B9A !important;
+  color: #8C30F5 !important;
   font-weight: bold !important;
   margin-bottom: 1rem !important;
 }
@@ -452,4 +453,45 @@ margin-left: 40px;
 .custom-section-mobile img {
   max-width: 100% !important;
   height: auto !important;
+}
+
+.final-section-mobile {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.final-section-mobile .mobile-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.final-section-mobile .highlight-text {
+  color: #7A3FDB;
+}
+
+.final-section-mobile .mobile-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.final-section-mobile .qr-code-mobile {
+  max-width: 150px;
+  height: auto;
+}
+
+.final-section-mobile .connect-btn {
+  background-color: #8C30F5;
+  border-color: #8C30F5;
+  color: #ffffff;
+}
+
+.final-section-mobile .connect-btn:hover {
+  background-color: #8C30F5;
+  border-color: #8C30F5;
+}
+
+.final-section-mobile .contact-info p {
+  color: #8C30F5;
+  font-size: 1rem;
+  margin: 0;
 }
