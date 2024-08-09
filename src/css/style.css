@@ -1,7 +1,7 @@
     body, html {
       height: 100%;
       margin: 0;
-      font-family: 'Nunito', sans-serif;
+      font-family: 'Nunito', sans-serif !important;
     }
 
     .fondoXcoti {
@@ -110,7 +110,6 @@
 
     .service-section {
       background-color: #FFFFFF;
-      height: 632px;
     }
 
     .service-section .text-primary {
@@ -214,7 +213,7 @@
   flex: 1;
 }
 /* Orden para dispositivos medianos y grandes */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .presentation-section .order-md-1 {
     order: 1;
   }
@@ -222,7 +221,7 @@
   .presentation-section .order-md-2 {
     order: 2;
   }
-}
+}*/
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -318,23 +317,46 @@
   border: 1px solid black;
 }
 
+
 /* Responsivo para iPhone 15 Pro */
-@media (max-width: 430px) {
-  .text-section h2 {
-      font-size: 1.8rem;
+/* Ajustes específicos para móviles */
+@media (max-width: 767.98px) {
+  .fondoXcoti {
+    padding: 20px;
+    text-align: center;
+    height: 507px;
   }
-  .text-section p {
-      font-size: 1rem;
+
+  .fondoXcoti h1 {
+    font-size: 2rem; /* Ajusta el tamaño de la fuente en móvil */
   }
-  .carousel-item img {
-      height: 40rem;
+
+  .fondoXcoti p {
+    font-size: 1rem; /* Ajusta el tamaño del párrafo en móvil */
   }
-  .main-container {
-      padding: 10px;
+
+  .custom-section p{
+    padding: 50px 0;
   }
-  .background-container {
-      top: 10px;
-      width: 420px;
+
+  .service-h2, .service-h3 {
+    text-align: left;
+  }
+  .lead {
+    font-size: 1rem;
+    text-align: left; /* Alinea el texto al centro en dispositivos móviles */
+  }
+  .service-section p {
+    text-align: left !important; /* Alinea todos los párrafos al centro en dispositivos móviles */
+    padding-top: 10px !important;
+  }
+  .service-section .strong{
+    margin-bottom: 1rem !important;
+  }
+  .service-section .col-md-6 {
+    margin-bottom: 1px !important; /* Reduce the space between each block */
+    height: 30px !important;
+    margin-left: 20px !important;
   }
 }
 
@@ -352,4 +374,124 @@
   .main-container {
       max-width: 1000px;
   }
+}
+
+.custom-section {
+  padding: 50px 0;
+}
+.text-section {
+  margin-top: 20px;
+}
+.text-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+.text-section p {
+  font-size: 1.1rem;
+  color: #666;
+}
+.rounded-img {
+  border-radius: 10px;
+}
+.distance-img2{
+margin-top: 40px;
+margin-left: 40px;
+}
+.close-gap {
+  margin-top: 10px;
+}
+.final-section {
+  margin-top: 11rem;
+  background-color: white;
+  padding: 60px 0;
+}
+.final-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.final-section .subtitle {
+  font-size: 1.2rem;
+  color: #777;
+}
+.contact-us-btn {
+  background-color: #7A3FDB;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+.qr-code {
+  max-width: 200px;
+}
+.imac-image {
+  max-width: 100%;
+}
+.custom-section-mobile {
+  background-color: #fff !important;
+  padding: 2rem 0 !important;
+}
+
+.custom-section-mobile h4{
+  color: #8C30F5 !important;
+  font-weight: bold !important;
+  margin-bottom: 1rem !important;
+}
+
+.custom-section-mobile h2 {
+  color: #424242 !important;
+  font-weight: bold !important;
+  margin-bottom: 1rem !important;
+}
+
+.custom-section-mobile p {
+  color: #6B7280 !important;
+  font-size: 1rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.custom-section-mobile img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.final-section-mobile {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.final-section-mobile .mobile-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.final-section-mobile .highlight-text {
+  color: #7A3FDB;
+}
+
+.final-section-mobile .mobile-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.final-section-mobile .qr-code-mobile {
+  max-width: 150px;
+  height: auto;
+}
+
+.final-section-mobile .connect-btn {
+  background-color: #8C30F5;
+  border-color: #8C30F5;
+  color: #ffffff;
+}
+
+.final-section-mobile .connect-btn:hover {
+  background-color: #8C30F5;
+  border-color: #8C30F5;
+}
+
+.final-section-mobile .contact-info p {
+  color: #8C30F5;
+  font-size: 1rem;
+  margin: 0;
 }

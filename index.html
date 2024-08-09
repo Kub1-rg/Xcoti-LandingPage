@@ -10,56 +10,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
     <link href="./src/css/style.css" rel="stylesheet">
     <style>
-        .custom-section {
-            padding: 50px 0;
-        }
-        .text-section {
-            margin-top: 20px;
-        }
-        .text-section h2 {
-            font-size: 2.5rem;
-            color: #333;
-        }
-        .text-section p {
-            font-size: 1.1rem;
-            color: #666;
-        }
-        .rounded-img {
-            border-radius: 10px;
-        }
-        .distance-img2{
-          margin-top: 40px;
-        }
-        .close-gap {
-            margin-top: 10px;
-        }
-        .final-section {
-          margin-top: 11rem;
-            background-color: white;
-            padding: 60px 0;
-        }
-        .final-section h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-        .final-section .subtitle {
-            font-size: 1.2rem;
-            color: #777;
-        }
-        .contact-us-btn {
-            background-color: #7A3FDB;
-            color: white;
-            border-radius: 20px;
-            padding: 10px 20px;
-            font-size: 1.1rem;
-            margin-top: 20px;
-        }
-        .qr-code {
-            max-width: 200px;
-        }
-        .imac-image {
-            max-width: 100%;
-        }
     </style>
 </head>
 <body>
@@ -68,27 +18,48 @@
         <div class="d-flex">
             <ul class="navbar-nav d-flex flex-row align-items-center">
                 <li class="nav-item me-3">
-                    <a class="nav-link" href=" https://wa.me/+593969840240" target="_blank">Contact</a>
+                    <a class="nav-link lead d-none d-md-block" href="" target="_blank">Home</a>
                 </li>
                 <li class="nav-item me-3">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link lead d-none d-lg-block" href="https://wa.me/+593969840240" target="_blank">Contact</a>
                 </li>
             </ul>
         </div>
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="">
             <img src="./img/xco_icon.png" alt="Brand Logo">
             <span>xcoti</span>
         </a>
+        
+        <div class="d-flex">
+          <ul class="navbar-nav d-flex flex-row align-items-center">
+              <li class="nav-item me-3">
+                  <a class="nav-link lead d-none d-md-block d-lg-none" href="https://wa.me/+593969840240">Contact</a>
+              </li>
+          </ul>
+      </div>
+        
         <div></div>
     </div>
   </nav>
 
-  <div class="fondoXcoti d-flex align-items-center justify-content-center">
+  <!--<div class="fondoXcoti d-flex align-items-center justify-content-center">
       <div class="container text-center">
         <h1>Streamline Your <span class="highlight">Naval Projects</span></h1>
         <p style="font-weight: 400;">Efficient and Accessible Digital Shipbuilding for Enhanced Performance and Innovation</p>
         <a href="#" class="btn btn-primary btn-lg">Get in touch</a>
       </div>
+  </div>-->
+  <div class="fondoXcoti d-flex align-items-center justify-content-center">
+    <div class="container text-center">
+      <h1 class="display-4 display-md-3 display-lg-1">Streamline Your <span class="highlight">Naval Projects</span></h1>
+      <!-- Párrafo solo visible en pantallas grandes -->
+    <p class="lead d-none d-md-block">Efficient and Accessible Digital Shipbuilding for Enhanced Performance and Innovation</p>
+    
+    <!-- Párrafo solo visible en móviles -->
+    <p class="d-block d-md-none">New App that leads to an Efficient and Accessible Digital Shipbuilding for Enhanced Performance and Innovation</p>
+
+      <a href="#" class="btn btn-primary btn-lg">Get in touch</a>
+    </div>
   </div>
 
   <div class="service-section py-5">
@@ -97,63 +68,101 @@
           <div class="col-lg-4 d-flex flex-column justify-content-center">
             <h2 class="text-primary service-h2">EVERYTHING YOU NEED</h2>
             <h3 class="service-h3">All-in-one Service</h3>
-            <p style="color: #6B7280;">Your Comprehensive Solution for Digital Shipbuilding, Engineering, and Project Management</p>
+            <p class="lead d-none d-md-block" style="color: #6B7280;">Your Comprehensive Solution for Digital Shipbuilding, Engineering, and Project Management</p>
           </div>
           <div class="col-lg-8">
             <div class="row">
-              <div class="col-md-6 mb-4">
+              <div class="col-md-6 ">
                 <p><i class="bi bi-check text-primary"></i> <strong>Invite team members</strong></p>
-                <p>Easily add project managers, engineers, and other team members to collaborate on your naval construction projects.</p>
+                <p class="lead d-none d-md-block">Easily add project managers, engineers, and other team members to collaborate on your naval construction projects.</p>
               </div>
-              <div class="col-md-6 mb-4">
+              <div class="col-md-6 ">
                 <p><i class="bi bi-check text-primary"></i> <strong>Process Reporting</strong></p>
-                <p>Generate comprehensive progress reports and share them with stakeholders to keep everyone informed.</p>
+                <p class="lead d-none d-md-block">Generate comprehensive progress reports and share them with stakeholders to keep everyone informed.</p>
               </div>
-              <div class="col-md-6 mb-4">
+              <div class="col-md-6 ">
                 <p><i class="bi bi-check text-primary"></i> <strong>Unified Communication Platform</strong></p>
-                <p>Manage feedback from a single, integrated mailbox to streamline communication.</p>
+                <p class="lead d-none d-md-block">Manage feedback from a single, integrated mailbox to streamline communication.</p>
               </div>
-              <div class="col-md-6 mb-4">
+              <!--Digital blueprint members only movil-->
+              <div class="col-md-6  d-md-none">
+                <p><i class="bi bi-check text-primary"></i> <strong>Digital blueprint Management</strong></p>
+              </div>
+              <!--Digital blueprint members only movil-->
+              <div class="col-md-6  d-md-none">
+                <p><i class="bi bi-check text-primary"></i> <strong>Cost Estimation Tools</strong></p>
+              </div>
+              <div class="col-md-6 ">
                 <p><i class="bi bi-check text-primary"></i> <strong>Secure Data Storage</strong></p>
-                <p>Ensure your project data is protected with high-level security measures and encrypted storage solutions.</p>
+                <p class="lead d-none d-md-block">Ensure your project data is protected with high-level security measures and encrypted storage solutions.</p>
               </div>
-              <div class="col-md-6 mb-4">
+              <div class="col-md-6">
                 <p><i class="bi bi-check text-primary"></i> <strong>Task and Deadline Tracking</strong></p>
-                <p>Monitor your progress to ensure projects stay on track.</p>
+                <p class="lead d-none d-md-block">Monitor your progress to ensure projects stay on track.</p>
               </div>
-              <div class="col-md-6 mb-4">
+              <div class="col-md-6">
                 <p><i class="bi bi-check text-primary"></i> <strong>3D Digital Object and Visualization</strong></p>
-                <p>Navigate and view 3D models of ship components and metadata for better accuracy and planning.</p>
+                <p class="lead d-none d-md-block">Navigate and view 3D models of ship components and metadata for better accuracy and planning.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
   </div>
-  <section class="custom-section">
+
+  <!--Section for mobile-->
+  <section class="custom-section-mobile d-md-none">
+    <div class="container">
+    <div class="row align-items-left my-1 py-1">
+      <h4 class="text-primary ">EASY ACCESS TO GOOD NAVAL ARCHITECTURE</h4>
+      <h2>Let’s get over barriers of engineering!</h2>
+    </div>
+        <div class="row align-items-center my-1">
+            <div class="col-8 text-left">
+                <!--<h4 class="text-primary ">EASY ACCESS TO GOOD NAVAL ARCHITECTURE</h4>
+                <h2>Let’s get over barriers of engineering!</h2>-->
+                <p>We believe the key for world marine pymes evolution is helping them to get all benefits of having an economical and easy access to good naval architecture for development of their ship products.</p>
+            </div>
+            <div class="col-4 text-center">
+              <img src="./img/ImagenMovil1.png" alt="Barriers" class="img-fluid my-1 py-1">
+          </div>
+        </div>
+        <div class="row align-items-left my-1 py-1">
+          <h4 class="text-primary ">YOUR OWN ENGINEERING TEAM</h4>
+          <h2>Let’s can give the great step together</h2>
+        </div>
+        <div class="row align-items-center my-1 py-1">
+          <div class="col-4 text-center order-md-2">
+            <img src="./img/ImagenMovil2.png" alt="Engineering Team" class="img-fluid my-3">
+        </div>
+            <div class="col-8 text-left">
+                <!--<h4 class="text-primary">YOUR OWN ENGINEERING TEAM</h4>
+                <h2>Let’s can give the great step together</h2>-->
+                <p>No more barriers, no more excuses. If you wish to live the experience working and having your own engineering team. XCoti brings you closer to it!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="custom-section d-none d-md-block">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <img src="./img/Imagen1.png" alt="Image 1" class="img-fluid rounded-img ">
             </div>
-            <div class="col-md-6 text-section">
-                <h2>Let’s get over barriers of engineering!</h2>
-                <p style="margin-top: 40px;">We believe the key for world marine pymes evolution is helping them to get all benefits of having an economical and easy access to good naval architecture for development of their ship products.</p>
+            <div class="col-md-7 text-section">
+                <h2 class="px-5">Let’s get over barriers of engineering!</h2>
+                <p style="margin-top: 40px;" class="px-5">We believe the key for world marine pymes evolution is helping them to get all benefits of having an economical and easy access to good naval architecture for development of their ship products.</p>
                 <div class="col-md-12 d-flex justify-content-center">
                   <img src="./img/Imagen2.png" alt="Image 2" class="img-fluid rounded-img distance-img2">
               </div>
             </div>
         </div>
-        <!--<div class="row align-items-center close-gap">
-            <div class="col-md-12 d-flex justify-content-center">
-                <img src="./img/Imagen2.png" alt="Image 2" class="img-fluid rounded-img">
-            </div>
-        </div>-->
-        <div class="row align-items-center mt-5">
+        <div class="row align-items-center mt-5 py-5">
             <div class="col-md-6 d-flex justify-content-center ">
                 <img src="./img/Imagen3.png" alt="Image 3" class="img-fluid rounded-img">
             </div>
-            <div class="col-md-6 text-section">
+            <div class="col-md-6 text-section px-5">
                 <h2>Let’s can give the great step together</h2>
                 <p>No more barriers, no more excuses. If you wish to live the experience working and having your own engineering team, xcoti brings you closer to it!</p>
             </div>
@@ -161,13 +170,13 @@
     </div>
   </section>
 
-
   <!-- Seccion del contenedor  -->
+   <!-- Seccion del contenedor -->
+<div>
    <div class="text-center">
     <h2>Here are some of our collaborations</h2>
     <p>Discover the countries/regions we've proudly worked</p>
 </div>
-<br>
 <div class="main-container">
     <div class="background-container"></div>
     <div class="carousel-container">
@@ -222,17 +231,22 @@
         </div>
     </div>
 </div>
-<br>
-<!-- Fin de la seccion del contenedor -->
+</div>
 
+  <div class="container final-section text-center d-none d-md-block">
+  <div class="row">
+    <div class="col-lg-8 text-start">
+      <h1>We also help empowering your business<br>Meet ...<span style="color: #7A3FDB;">XcoTween</span></h1>
+    </div>
+    <div class="col-lg-4">
 
-
-  <div class="container final-section text-center">
+    </div>
+  </div>
     <div class="row">
         <div class="col-lg-6 text-start">
-            <h1>We also help empowering your business<br>Meet ...<span style="color: #7A3FDB;">XcoTween</span></h1>
+            <!--<h1>We also help empowering your business<br>Meet ...<span style="color: #7A3FDB;">XcoTween</span></h1>-->
             <p class="mt-4">xcoti helps taking your company towards the 4.0 industry with xcotween</p>
-            <div class="mt-5">
+            <div class="mt-2">
                 <img src="./img/XcotiQr.png" alt="QR Code" class="qr-code">
             </div>
             <a href="#" class="btn contact-us-btn mt-3">Contact us</a>
@@ -241,7 +255,7 @@
                 <p style="color: #7A3FDB;"><i class="bi bi-envelope"></i> xcoti@mail.com</p>
             </div>
         </div>
-        <div class="col-lg-6 text-center">
+        <div class="col-lg-6 justify-content-center">
             <img src="./img/XcotiImac.png" alt="iMac Image" class="imac-image">
         </div>
     </div>
@@ -249,7 +263,26 @@
         <p class="text-center mt-4">Send us a message and a member of the team will contact you</p>
     </div>
 </div>
-
+<div class="container final-section-mobile text-center d-md-none">
+  <h2 class="mobile-title">Meet <span class="highlight-text">...XcoTween</span></h2>
+    
+  <img src="./img/XcotiImac.png" alt="iMac Image" class="img-fluid mobile-image my-3">
+  
+  <p class="mt-4">xcoti helps taking your company towards the 4.0 industry with xcotween</p>
+  
+  <div class="my-4">
+      <img src="./img/XcotiQr.png" alt="QR Code" class="img-fluid qr-code-mobile">
+  </div>
+  
+  <a href="#" class="btn connect-btn my-3">Connect with us</a>
+  
+  <div class="contact-info mt-4">
+      <p><i class="bi bi-whatsapp"></i> Whatsapp</p>
+      <p><i class="bi bi-envelope"></i> xcoti@mail.com</p>
+  </div>
+  
+  <p class="text-center mt-4">Send us a message and a member of the team will contact you</p>
+</div>
 
   <footer class="footer text-center text-lg-start">
     <div class="container d-flex justify-content-between align-items-center">
