@@ -317,6 +317,10 @@
   border: 1px solid black;
 }
 
+.boat-info {
+  display: none;
+}
+
 
 /* Responsivo para iPhone 15 Pro */
 /* Ajustes específicos para móviles */
@@ -335,30 +339,76 @@
     font-size: 1rem; /* Ajusta el tamaño del párrafo en móvil */
   }
 
-  .custom-section p{
+  .custom-section p {
     padding: 50px 0;
   }
 
   .service-h2, .service-h3 {
     text-align: left;
   }
+
   .lead {
     font-size: 1rem;
-    text-align: left; /* Alinea el texto al centro en dispositivos móviles */
+    text-align: left; /* Alinea el texto a la izquierda en dispositivos móviles */
   }
+
   .service-section p {
-    text-align: left !important; /* Alinea todos los párrafos al centro en dispositivos móviles */
+    text-align: left !important; /* Alinea todos los párrafos a la izquierda en dispositivos móviles */
     padding-top: 10px !important;
   }
-  .service-section .strong{
+
+  .service-section .strong {
     margin-bottom: 1rem !important;
   }
+
   .service-section .col-md-6 {
-    margin-bottom: 1px !important; /* Reduce the space between each block */
+    margin-bottom: 1px !important; /* Reduce el espacio entre cada bloque */
     height: 30px !important;
     margin-left: 20px !important;
   }
+
+  .custom-carousel {
+    margin-left: -1rem;
+    margin-top: -1rem;
+  }
+
+  .background-container {
+    margin-top: -1rem;
+    width: 94%;
+  }
+
+  /* Estilos específicos para agregar título, descripción y franja morada */
+  .carousel-item {
+    position: relative;
+    padding-bottom: 20px; /* Espacio para la descripción y franja */
+  }
+
+  /* .carousel-item::after {
+    content: '';
+    display: block;
+    border-top: 2px solid #800080;
+    margin: 10px 0;
+  } */
+
+  .carousel-item .boat-info {
+    display: block;
+    text-align: center;
+  }
+
+  .carousel-item .boat-title {
+    font-size: 1.2rem;
+    color: #000; /* Título negro */
+    margin-top: 10px;
+  }
+
+  .carousel-item .boat-description {
+    font-size: 1rem;
+    color: #555; /* Descripción en gris */
+    margin-top: 5px;
+  }
 }
+
+
 
 /* Responsivo para MacBook 14 Pro */
 @media (min-width: 1400px) {
@@ -456,7 +506,7 @@ margin-left: 40px;
 }
 
 .final-section-mobile {
-  padding: 20px;
+  padding: 3rem;
   background-color: #ffffff;
 }
 
@@ -494,4 +544,10 @@ margin-left: 40px;
   color: #8C30F5;
   font-size: 1rem;
   margin: 0;
+}
+
+.language-flag {
+  width: 24px; /* Ajusta el tamaño según necesites */
+  height: auto;
+  border-radius: 2px; /* Opción de agregar un borde redondeado */
 }

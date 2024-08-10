@@ -31,16 +31,25 @@
         </a>
         
         <div class="d-flex">
-          <ul class="navbar-nav d-flex flex-row align-items-center">
-              <li class="nav-item me-3">
-                  <a class="nav-link lead d-none d-md-block d-lg-none" href="https://wa.me/+593969840240">Contact</a>
-              </li>
-          </ul>
-      </div>
-        
-        <div></div>
+            <ul class="navbar-nav d-flex flex-row align-items-center">
+                <li class="nav-item me-3">
+                    <a class="nav-link lead d-none d-md-block d-lg-none" href="https://wa.me/+593969840240">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contenedor para las banderas -->
+        <div class="d-flex align-items-center">
+            <a class="me-2" id="españolBandera">
+                <img src="./img/ec.svg" alt="Español" class="language-flag">
+            </a>
+            <a id="inglesBandera">
+                <img src="./img/us.svg" alt="Inglés" class="language-flag">
+            </a>
+        </div>
     </div>
-  </nav>
+</nav>
+
 
   <!--<div class="fondoXcoti d-flex align-items-center justify-content-center">
       <div class="container text-center">
@@ -51,7 +60,7 @@
   </div>-->
   <div class="fondoXcoti d-flex align-items-center justify-content-center">
     <div class="container text-center">
-      <h1 class="display-4 display-md-3 display-lg-1">Streamline Your <span class="highlight">Naval Projects</span></h1>
+      <h1 class="display-4 display-md-3 display-lg-1" id="primerTitulo">Streamline Your</h1> <h1 class="display-4 display-md-3 display-lg-1" id="segundoTitulo"><span class="highlight">Naval Projects</span></h1>
       <!-- Párrafo solo visible en pantallas grandes -->
     <p class="lead d-none d-md-block">Efficient and Accessible Digital Shipbuilding for Enhanced Performance and Innovation</p>
     
@@ -191,31 +200,36 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/BR11DS/01.png')">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/BR11DS/SeptimoBarco.gif')">
                     <img src="img/BR11DS/01.png" class="d-block w-100" alt="...">
-                  </a>                
+                  </a>    
+                  <!-- <div class="boat-info">
+                    <div class="boat-title">Quinto Barco</div>
+                    <div class="boat-description">Descripción del quinto barco.</div>
+                </div>             -->
               </div>
                 <div class="carousel-item">
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/Cormorant_II_49/01.png')">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/Cormorant_II_49/QuintoBarco.gif')">
                     <img src="img/Cormorant_II_49/01.png" class="d-block w-100" alt="...">
-                  </a>                </div>
+                  </a>                
+                </div>
                 <div class="carousel-item">
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/Crystal_09/01.png')">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/Crystal_09/CuartoBarco.gif')">
                     <img src="img/Crystal_09/01.png" class="d-block w-100" alt="...">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/hdpe_work_03/01.png')">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/hdpe_work_03/TercerBarco.gif')">
                     <img src="img/hdpe_work_03/01.png" class="d-block w-100" alt="...">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/OCV1306/01.png')">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/OCV1306/SegundoBarco.gif')">
                     <img src="img/OCV1306/01.png" class="d-block w-100" alt="...">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/PG07DS/01.png')">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/PG07DS/PrimerBarco.gif')">
                     <img src="img/PG07DS/01.png" class="d-block w-100" alt="...">
                   </a>
                 </div>
@@ -312,10 +326,11 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-  <script>
-    function showImageInModal(imageSrc) {
-    document.getElementById('modalImage').src = imageSrc;
-}
-  </script>
+<script src="./src/js/index.js"></script>
+<script>
+  function showImageInModal(imageSrc) {
+      document.getElementById('modalImage').src = imageSrc;
+  }
+</script>
 </body>
 </html>
