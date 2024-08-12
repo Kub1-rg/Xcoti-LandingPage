@@ -1,19 +1,66 @@
 {
     "primerTitulo": "Optimice sus",
     "segundoTitulo" : "Proyectos Navales",
-    "descripcion": "¡Gracias por visitar nuestra página de inicio!",
-    "boton": "Iniciar sesión",
+    "descCripcionTitulo": "Construcción naval digital eficiente y accesible para mejorar el rendimiento y la innovación",
+    "primerSeccionPrimerParrafoMovil": "Nueva aplicación que conduce a una construcción naval digital eficiente y accesible para mejorar el rendimiento y la innovación",
+    "botonTexto": "Ponte en contacto",
     "menu": {
-        "inicio": "Inicio",
-        "acerca": "Acerca de",
-        "servicios": "Servicios",
-        "contacto": "Contacto"
-    },
-    "footer": {
-        "derechos": "Todos los derechos reservados",
-        "contacto": "Contacto",
-        "direccion": "123 Calle Principal, Ciudad",
-        "telefono": "123-456-7890",
-        "correo": "info@xcoti.com"
+        "tituloMenu": "TODO LO QUE NECESITES",
+        "subTituloTitulo": "Servicio todo en uno",
+        "descripcionSubTitulo": "Su solución integral para construcción naval, ingeniería y gestión de proyectos digitales",
+        "primerSeccionServiciosTitulo": "Invitar a miembros del equipo",
+        "primerSeccionServiciosDesc": "Agregue fácilmente gerentes de proyecto, ingenieros y otros miembros del equipo para colaborar en sus proyectos de construcción naval.",
+
+        "segundaColumnaServiciosTituloPFila": "Informes de proceso.",
+        "segundaColumnaServiciosDescPFila": "Genere informes de progreso completos y compártalos con las partes interesadas para mantener a todos informados.",
+
+        "primerColumnaServiciosTituloSFila": "Plataforma de comunicación unificada.",
+        "primerColumnaServiciosDescSFila": "Administre los comentarios desde un único buzón de correo integrado para agilizar la comunicación.",
+
+        "segundaColumnaServiciosTituloSFila": "Almacenamiento seguro de datos.",
+        "segundaColumnaServiciosDescSFila": "Asegúrese de que los datos de su proyecto estén protegidos con medidas de seguridad de alto nivel y soluciones de almacenamiento cifrado.",
+
+        "primerColumnaServiciosTituloTFila": "Plataforma de comunicación unificada.",
+        "primerColumnaServiciosDescTFila": "Administre los comentarios desde un único buzón de correo integrado para agilizar la comunicación.",
+
+        "segundaColumnaServiciosTituloTFila": "Visualización y objetos digitales 3D.",
+        "segundaColumnaServiciosDescTFila": "Navegue y vea modelos 3D de componentes y metadatos del barco para una mayor precisión y planificación.",
+
+        "titulSeccionBarcos": "¡Superemos las barreras de la ingeniería!.",
+        "descSeccionBarcos": "Creemos que la clave para la evolución de las pymes marinas mundiales es ayudarlas a obtener todos los beneficios de tener un acceso fácil y económico a una buena arquitectura naval para el desarrollo de sus productos navales.",
+        
+        "segundoTitulSeccionBarcos": "Demos juntos el gran paso.",
+        "segundaDescSeccionBarcos": "No more barriers, no more excuses. If you wish to live the experience working and having your own engineering team, xcoti brings you closer to it!.",
+        
+
+        "primerSeccionTituloMovil": "FÁCIL ACCESO A LA BUENA ARQUITECTURA NAVAL.",
+        "primerSeccionSubTituloMovil": "¡Superemos las barreras de la ingeniería!",
+        "primerSeccionDescTituloMovil": "Creemos que la clave para la evolución de las pymes marinas mundiales es ayudarlas a obtener todos los beneficios de tener un acceso fácil y económico a una buena arquitectura naval para el desarrollo de sus productos navales.",
+
+        "segundaSeccionTituloMovil": "TU PROPIO EQUIPO DE INGENIERA.",
+        "segundaSeccionSubTituloMovil": "Demos juntos el gran paso",
+        "segundaSeccionDescTituloMovil": "No más barreras, no más excusas. Si deseas vivir la experiencia trabajando y teniendo tu propio equipo de ingeniería. ¡XCoti te acerca a ello!.",
+        
+        "tituloServiciosSeccionMavilUno": "Gestión de planos digitales.",
+        "tituloServiciosSeccionMavilDos": "Herramientas de estimación de costos.",
+
+
+        "primerTituloSeccionCarrusel": "Estas son algunas de nuestras colaboraciones.",
+        "primerDescSeccionCarrusel": "Descubra los países/regiones en los que hemos trabajado con orgullo.",
+
+        "primerTituloSeccionContacto": "También ayudamos a potenciar tu negocio.\nConoce...XcoTween",
+        "primerDescSeccionContacto": "xcoti ayuda a llevar tu empresa hacia la industria 4.0 con xcotween.",
+        "segundaDescSeccionContacto": "Envíanos un mensaje y un miembro del equipo se comunicará contigo.",
+        "seccionContactoMobileTitulo": "Conoce a ...XcoTween.",
+        "seccionContactoMobileDesc": "xcoti ayuda a llevar tu empresa hacia la industria 4.0 con xcotween.",
+        "seccionContactonesDescMobil": "Envíanos un mensaje y un miembro del equipo se comunicará contigo.",
+        "botonContactanos": "Contactanos",
+        "botonSeccionContactoMobil": "Conecta con nosotros",
+
+    
+        "footerDerechos": "© 2022 xcoti. Todos los derechos reservados"
+
+
+
     }
 }

@@ -1,19 +1,67 @@
 {
     "primerTitulo": "Streamline Your",
     "segundoTitulo" : "Naval Projects",
-    "descripcion": "¡Gracias por visitar nuestra página de inicio!",
-    "boton": "Iniciar sesión",
+    "descCripcionTitulo": "Efficient and Accessible Digital Shipbuilding for Enhanced Performance and Innovation",
+    "primerSeccionPrimerParrafoMovil": "New App that leads to an Efficient and Accessible Digital Shipbuilding for Enhanced Performance and Innovation",
+    "botonTexto": "Get in Touch",
     "menu": {
-        "inicio": "Inicio",
-        "acerca": "Acerca de",
-        "servicios": "Servicios",
-        "contacto": "Contacto"
-    },
-    "footer": {
-        "derechos": "Todos los derechos reservados",
-        "contacto": "Contacto",
-        "direccion": "123 Calle Principal, Ciudad",
-        "telefono": "123-456-7890",
-        "correo": "info@xcoti.com"
+        "tituloMenu": "EVERYTHING YOU NEED",
+        "subTituloTitulo": "All-in-one Service",
+        "descripcionSubTitulo": "Your Comprehensive Solution for Digital Shipbuilding, Engineering, and Project Management",
+        "primerSeccionServiciosTitulo": "Invite team members",
+        "primerSeccionServiciosDesc": "Easily add project managers, engineers, and other team members to collaborate on your naval construction projects.",
+
+        
+        "segundaColumnaServiciosTituloPFila": " Process Reporting.",
+        "segundaColumnaServiciosDescPFila": "Generate comprehensive progress reports and share them with stakeholders to keep everyone informed.",
+
+        "primerColumnaServiciosTituloSFila": " Unified Communication Platform.",
+        "primerColumnaServiciosDescSFila": "Manage feedback from a single, integrated mailbox to streamline communication.",
+
+        "segundaColumnaServiciosTituloSFila": "Secure Data Storage.",
+        "segundaColumnaServiciosDescSFila": "Ensure your project data is protected with high-level security measures and encrypted storage solutions.",
+
+        "primerColumnaServiciosTituloTFila": "Task and Deadline Tracking.",
+        "primerColumnaServiciosDescTFila": "Monitor your progress to ensure projects stay on track.",
+
+        "segundaColumnaServiciosTituloTFila": "3D Digital Object and Visualization.",
+        "segundaColumnaServiciosDescTFila": "Navigate and view 3D models of ship components and metadata for better accuracy and planning.",
+
+        "titulSeccionBarcos": "Let’s get over barriers of engineering!",
+        "descSeccionBarcos": "We believe the key for world marine pymes evolution is helping them to get all benefits of having an economical and easy access to good naval architecture for development of their ship products.",
+        
+        "segundoTitulSeccionBarcos": "Let’s can give the great step together.",
+        "segundaDescSeccionBarcos": "No more barriers, no more excuses. If you wish to live the experience working and having your own engineering team, xcoti brings you closer to it!.",
+        
+
+        "primerSeccionTituloMovil": "EASY ACCESS TO GOOD NAVAL ARCHITECTURE.",
+        "primerSeccionSubTituloMovil": "Let’s get over barriers of engineering!",
+        "primerSeccionDescTituloMovil": "We believe the key for world marine pymes evolution is helping them to get all benefits of having an economical and easy access to good naval architecture for development of their ship products.",
+
+        "segundaSeccionTituloMovil": "YOUR OWN ENGINEERING TEAM.",
+        "segundaSeccionSubTituloMovil": "Let’s can give the great step together",
+        "segundaSeccionDescTituloMovil": "No more barriers, no more excuses. If you wish to live the experience working and having your own engineering team. XCoti brings you closer to it!.",
+        
+        "tituloServiciosSeccionMavilUno": "Digital blueprint Management.",
+        "tituloServiciosSeccionMavilDos": "Cost Estimation Tools.",
+
+
+        "primerTituloSeccionCarrusel": "Here are some of our collaborations.",
+        "primerDescSeccionCarrusel": "Discover the countries/regions we've proudly worked.",
+
+        "primerTituloSeccionContacto": "We also help empowering your business\nMeet ...XcoTween",
+        "primerDescSeccionContacto": "xcoti helps taking your company towards the 4.0 industry with xcotween.",
+        "segundaDescSeccionContacto": "Send us a message and a member of the team will contact you",
+        "seccionContactoMobileTitulo": "Meet ...XcoTween.",
+        "seccionContactoMobileDesc": "xcoti helps taking your company towards the 4.0 industry with xcotween.",
+        "seccionContactonesDescMobil": "Send us a message and a member of the team will contact you",
+        "botonContactanos": "Contact Us",
+        "botonSeccionContactoMobil": "Connect with us",
+
+    
+        "footerDerechos": "© 2022 xcoti. Todos los derechos reservados"
+
+
+
     }
 }
