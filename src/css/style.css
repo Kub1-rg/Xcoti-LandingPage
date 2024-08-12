@@ -46,19 +46,22 @@
 
     .navbar-brand span {
       color: black;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
+      font-weight: 400 !important;
       margin-left: 10px;
-      font-family: 'Roboto', sans-serif;
     }
 
     .navbar-brand img {
-      margin-right: 1px; 
+      margin-right: 1px;
+      width: 70px;
+      height: auto;
     }
 
     .navbar-brand {
       display: flex;
       align-items: center;
       justify-content: center;
+      padding-left: 150px;
     }
 
     .navbar-nav {
@@ -90,7 +93,7 @@
 
     .highlight {
       color: #8C30F5;
-      font-weight: 800;
+      font-weight: 800  !important;
     }
 
     h1 .highlight {
@@ -101,6 +104,7 @@
     .btn-primary {
       background-color: #8C30F5;
       border-color: #8C30F5;
+      width: 536px;
     }
 
     .btn-primary:hover {
@@ -406,6 +410,13 @@
     color: #555; /* Descripción en gris */
     margin-top: 5px;
   }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+  }
 }
 
 
@@ -423,6 +434,12 @@
   }
   .main-container {
       max-width: 1000px;
+  }
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
   }
 }
 
