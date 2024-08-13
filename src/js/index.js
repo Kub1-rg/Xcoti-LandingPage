@@ -61,7 +61,7 @@ $(document).ready(function() {
           $('#descSeccionBarcos').text(data.menu.descSeccionBarcos);
 
           $('#segundoTitulSeccionBarcos').text(data.menu.segundoTitulSeccionBarcos);
-          $('#segundaDescSeccionBarcos').text(data.menu.descSeccionBarcos);
+          $('#segundaDescSeccionBarcos').text(data.menu.segundaDescSeccionBarcos);
           // ----------------| FIN Sección de Barcos |----------------
           
           

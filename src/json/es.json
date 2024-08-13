@@ -1,9 +1,9 @@
 {
     "primerTitulo": "Optimice sus",
     "segundoTitulo" : "Proyectos Navales",
-    "descCripcionTitulo": "Construcción naval digital eficiente y accesible para mejorar el rendimiento y la innovación",
+    "descCripcionTitulo": "Construcción digital de buques accesible y eficiente para mejorar el rendimiento e innovación",
     "primerSeccionPrimerParrafoMovil": "Nueva aplicación que conduce a una construcción naval digital eficiente y accesible para mejorar el rendimiento y la innovación",
-    "botonTexto": "Ponte en contacto",
+    "botonTexto": "Contactanos",
     "menu": {
         "tituloMenu": "TODO LO QUE NECESITES",
         "subTituloTitulo": "Servicio todo en uno",
@@ -26,11 +26,11 @@
         "segundaColumnaServiciosTituloTFila": "Visualización y objetos digitales 3D.",
         "segundaColumnaServiciosDescTFila": "Navegue y vea modelos 3D de componentes y metadatos del barco para una mayor precisión y planificación.",
 
-        "titulSeccionBarcos": "¡Superemos las barreras de la ingeniería!.",
+        "titulSeccionBarcos": "¡Superemos las barreras de ingeniería!",
         "descSeccionBarcos": "Creemos que la clave para la evolución de las pymes marinas mundiales es ayudarlas a obtener todos los beneficios de tener un acceso fácil y económico a una buena arquitectura naval para el desarrollo de sus productos navales.",
         
         "segundoTitulSeccionBarcos": "Demos juntos el gran paso.",
-        "segundaDescSeccionBarcos": "No more barriers, no more excuses. If you wish to live the experience working and having your own engineering team, xcoti brings you closer to it!.",
+        "segundaDescSeccionBarcos": "No más barreras, no más excusas. Si deseas vivir la experiencia trabajando y teniendo tu propio equipo de ingeniería! de detalle y produccion. \n¡Xcoti te acerca a ello!.",
         
 
         "primerSeccionTituloMovil": "FÁCIL ACCESO A LA BUENA ARQUITECTURA NAVAL.",
@@ -39,21 +39,21 @@
 
         "segundaSeccionTituloMovil": "TU PROPIO EQUIPO DE INGENIERA.",
         "segundaSeccionSubTituloMovil": "Demos juntos el gran paso",
-        "segundaSeccionDescTituloMovil": "No más barreras, no más excusas. Si deseas vivir la experiencia trabajando y teniendo tu propio equipo de ingeniería. ¡XCoti te acerca a ello!.",
+        "segundaSeccionDescTituloMovil": "No más barreras, no más excusas. Si deseas vivir la experiencia trabajando y teniendo tu propio equipo de ingeniería de detalle y produccion. \n¡Xcoti te acerca a ello!.",
         
         "tituloServiciosSeccionMavilUno": "Gestión de planos digitales.",
         "tituloServiciosSeccionMavilDos": "Herramientas de estimación de costos.",
 
 
-        "primerTituloSeccionCarrusel": "Estas son algunas de nuestras colaboraciones.",
-        "primerDescSeccionCarrusel": "Descubra los países/regiones en los que hemos trabajado con orgullo.",
+        "primerTituloSeccionCarrusel": "Nuestras colaboraciones.",
+        "primerDescSeccionCarrusel": "Descubra los países/regiones en los que hemos trabajado ogullosamente.",
 
         "primerTituloSeccionContacto": "También ayudamos a potenciar tu negocio.\n Conoce...",
         "segundoTituloSeccionContacto": "XcoTween",
-        "primerDescSeccionContacto": "xcoti ayuda a llevar tu empresa hacia la industria 4.0 con xcotween.",
+        "primerDescSeccionContacto": "Un programa que ayuda a llevar tu empresa hacia la industria 4.0.",
         "segundaDescSeccionContacto": "Envíanos un mensaje y un miembro del equipo se comunicará contigo.",
         "seccionContactoMobileTitulo": "Conoce a ...XcoTween.",
-        "seccionContactoMobileDesc": "xcoti ayuda a llevar tu empresa hacia la industria 4.0 con xcotween.",
+        "seccionContactoMobileDesc": "Un programa que ayuda a llevar tu empresa hacia la industria 4.0.",
         "seccionContactonesDescMobil": "Envíanos un mensaje y un miembro del equipo se comunicará contigo.",
         "botonContactanos": "Contactanos",
         "botonSeccionContactoMobil": "Conecta con nosotros",
