@@ -22,7 +22,6 @@ $(document).ready(function() {
           $('#primerColumnaServiciosTitulo').text(data.menu.primerSeccionServiciosTitulo);
           $('#primerColumnaServiciosDesc').text(data.menu.primerSeccionServiciosDesc);
 
-          // console.log(data.menu.primerColumnaServiciosTituloPFila);
           
           $('#segundaColumnaServiciosTituloPFila').text(data.menu.segundaColumnaServiciosTituloPFila);
           $('#segundaColumnaServiciosDescPFila').text(data.menu.segundaColumnaServiciosDescPFila);
@@ -77,6 +76,8 @@ $(document).ready(function() {
           // ----------------| Sección de Footer |----------------
           
           $('#primerTituloSeccionContacto').text(data.menu.primerTituloSeccionContacto);
+          console.log(data.menu.segundoTituloSeccionContacto);
+          $('#segundoTituloSeccionContacto').text(data.menu.segundoTituloSeccionContacto);
           $('#primerDescSeccionContacto').text(data.menu.primerDescSeccionContacto);
           $('#segundaDescSeccionContacto').text(data.menu.segundaDescSeccionContacto);
           $('#seccionContactoMobileTitulo').text(data.menu.seccionContactoMobileTitulo);
@@ -98,6 +99,7 @@ $(document).ready(function() {
       
           $('#primerTitulo').text(data.primerTitulo);
           $('#segundoTitulo').text(data.segundoTitulo);
+          // $('#segundoTitulo').css('highlight');
           $('#descCripcionTitulo').text(data.descCripcionTitulo);
           $('#primerSeccionPrimerParrafoMovil').text(data.primerSeccionPrimerParrafoMovil);
           $('#botonTexto').text(data.botonTexto);
@@ -108,7 +110,7 @@ $(document).ready(function() {
           $('#primerColumnaServiciosTitulo').text(data.menu.primerSeccionServiciosTitulo);
           $('#primerColumnaServiciosDesc').text(data.menu.primerSeccionServiciosDesc);
 
-          // console.log(data.menu.primerColumnaServiciosTituloPFila);
+          console.log(data.menu.segundoTituloSeccionContacto);
           
           $('#segundaColumnaServiciosTituloPFila').text(data.menu.segundaColumnaServiciosTituloPFila);
           $('#segundaColumnaServiciosDescPFila').text(data.menu.segundaColumnaServiciosDescPFila);
