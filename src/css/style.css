@@ -242,18 +242,7 @@ max-width: 800px;
 margin: auto;
 padding: 20px;
 }
-.background-container {
-background: linear-gradient(135deg, rgba(196, 149, 249, 1) 0%, rgba(166, 139, 198, 1) 100%);
-border-radius: 0 60px 0px 60px;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-position: absolute;
-top: 20px;
-left: 51%;
-transform: translateX(-50%);
-width: 107%;
-height: 105%;
-z-index: 1;
-}
+
 .carousel-container {
 position: relative;
 z-index: 2;
@@ -300,23 +289,178 @@ margin-right: -3px;
 }
 */
 .custom-carousel {
+  display: none;
 background: white;
 padding: 20px;
 border-radius: 20px;
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 margin-left: -4rem;
 margin-top: -2rem;
-border: 1px solid black;
+border: 1px solid #8C30F5;
 }
+
+.swiper-container {
+  width: 100%;
+  height: 450px; /* Ajusta la altura del Swiper */
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #8C30F5; /* Borde entre slides */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.swiper-slide img {
+  display: block;
+  width: auto; /* Ajuste automático del ancho */
+  height: 100%; /* Ocupa toda la altura */
+  object-fit: cover;
+}
+
+#españolBandera, #inglesBandera {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+/* Indicador de selección */
+#españolBandera.selected::after, #inglesBandera.selected::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: blue;
+}
+
+/* Efecto hover */
+#españolBandera:hover::after, #inglesBandera:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+}
+
+
+
+/* Estilo personalizado para el botón de cierre */
+.modal-header .btn-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: gray;
+  opacity: 1;
+}
+
+.modal-header .btn-close:hover {
+  color: darkgray;
+}
+
 
 .boat-info {
 display: none;
 }
 
+.background-container{
+  display: none;
+}
+
+.nunito-font {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Estilos para pantallas grandes (PC) */
+@media (min-width: 992px) {
+  .custom-modal .modal-dialog {
+    max-width: 60%; /* Ajusta el ancho según tus necesidades */
+    max-height: 60%; /* Ajusta la altura según tus necesidades */
+  }
+
+  .custom-modal .modal-content {
+    height: 100%; /* Asegura que el contenido ocupe toda la altura del modal */
+  }
+
+  .custom-modal .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .custom-modal #modalImage {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 991px) {
+  .custom-modal .modal-dialog {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .custom-modal .modal-content {
+    height: auto;
+  }
+
+  .custom-modal .modal-body {
+    display: block;
+    height: auto;
+  }
+
+  .custom-modal #modalImage {
+    max-width: 100%;
+    max-height: auto;
+  }
+}
 
 /* Responsivo para iPhone 15 Pro */
 /* Ajustes específicos para móviles */
 @media (max-width: 767.98px) {
+  .swiper-contenedor {
+    display: none;
+  }
+  #menuToggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#languageMenu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#languageMenu.show {
+    display: flex;
+}
+
+#españolBandera, #inglesBandera {
+    width: 100%;
+    text-align: left;
+}
+
+  .custom-modal .modal-dialog {
+    margin-left: 3rem;
+    max-width: 70%;
+    max-height: 60%;
+  }
 
 .custom-navbar {
 border: 2px solid #e0dfdf; /* Ancho, estilo y color del borde */
@@ -368,8 +512,12 @@ width: auto !important;
 }
 
 .custom-carousel {
-margin-left: -1rem;
-margin-top: -1rem;
+  display: block;
+  height: 15rem;
+  width: 19rem;
+  margin-left: 0rem;
+  margin-top: -1rem;
+  border-radius: 30px;
 }
 
 .background-container {
@@ -417,6 +565,19 @@ padding-left: 50px;
 background-color: #8C30F5;
 border-color: #8C30F5;
 width: 206px;
+}
+
+.background-container {
+  display: block;
+  background: linear-gradient(-12deg, rgba(196, 149, 249, 1) 0%, rgba(190, 139, 198, 1) 100%);  border-radius: 0 70px 0px 90px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 43px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65%;
+  height: 105%;
+  z-index: 1;
 }
 }
 

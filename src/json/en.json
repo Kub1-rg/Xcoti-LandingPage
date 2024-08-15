@@ -1,4 +1,7 @@
 {
+    
+    "españolBandera": "Spanish",
+    "inglesBandera": "English",
     "primerTitulo": "Streamline Your",
     "segundoTitulo" : "Naval Projects",
     "descCripcionTitulo": "Efficient and Accessible Digital Shipbuilding for Enhanced Performance and Innovation",
@@ -32,7 +35,7 @@
         
         "segundoTitulSeccionBarcos": "Let’s can give the great step together.",
         "segundaDescSeccionBarcos": "No more barriers, no more excuses. If you wish to live the experience working and having your own engineering team, for detail and production. Xcoti brings you closer to it!.",
-        
+        "segundoTitulSeccionBarcosbotonTexto" : "How we do it?",
 
         "primerSeccionTituloMovil": "EASY ACCESS TO GOOD NAVAL ARCHITECTURE.",
         "primerSeccionSubTituloMovil": "Let’s get over barriers of engineering!",

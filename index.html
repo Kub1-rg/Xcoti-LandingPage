@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
     <link href="./src/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
     </style>
 </head>
@@ -40,13 +42,24 @@
 
         <!-- Contenedor para las banderas -->
         <div class="d-flex align-items-center">
-            <a class="me-2" id="españolBandera">
-                <img src="./img/ec.svg" alt="Español" class="language-flag">
-            </a>
-            <a id="inglesBandera">
-                <img src="./img/us.svg" alt="Inglés" class="language-flag">
-            </a>
-        </div>
+          <div class="dropdown d-md-none">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="menuToggle" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
+                  Menu
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="menuToggle">
+                  <li><a class="dropdown-item" href="#" id="españolBandera">Español</a></li>
+                  <li><a class="dropdown-item" href="#" id="inglesBandera">Ingles</a></li>
+              </ul>
+          </div>
+          <div id="languageMenu" class="d-none d-md-flex">
+              <a class="me-2 selected" id="españolBandera">
+                Español
+              </a>
+              <a class="me-2" id="inglesBandera">
+                Ingles
+              </a>
+          </div>
+      </div>
     </div>
 </nav>
 
@@ -67,7 +80,7 @@
     <!-- Párrafo solo visible en móviles -->
     <p class="d-block d-md-none" id="primerSeccionPrimerParrafoMovil">New App that leads to an Efficient and Accessible Digital Shipbuilding for Enhanced Performance and Innovation</p>
 
-      <a href="https://wa.me/+593969840240" class="btn btn-primary btn-lg" id="botonTexto">Get in touch</a>
+      <a href="https://wa.me/+593969840240" class="btn btn-primary btn-lg" id="botonTexto" target="_blank">Get in touch</a>
     </div>
   </div>
 
@@ -175,7 +188,7 @@
                 <h2 id="segundoTitulSeccionBarcos">Let’s can give the great step together</h2>
                 <p id="segundaDescSeccionBarcos">No more barriers, no more excuses. If you wish to live the experience working and having your own engineering team, for detail and production. Xcoti brings you closer to it!</p>
                 <li class="nav-item me-3">
-                    <a class="nav-link lead d-none d-lg-block" href="https://wa.me/+593969840240" target="_blank">Contact</a>
+                  <a href="https://wa.me/+593969840240" class="btn btn-primary btn-lg" id="segundoTitulSeccionBarcosbotonTexto" target="_blank">How we do it</a>
                 </li>
               </div>
         </div>
@@ -239,12 +252,34 @@
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
-                <span class="visually-hidden">Previous</span>
+                <!-- <span class="visually-hidden">Previous</span> -->
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
-                <span class="visually-hidden">Next</span>
+                <!-- <span class="visually-hidden">Next</span> -->
             </button>
+        </div>
+        <div class="swiper-contenedor" style="border: 1px solid #8C30F5; border-radius: 15px; padding: 10px;">
+          <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="10" slides-per-view="3">
+            <swiper-slide data-gif="img/BR11DS/SeptimoBarco.gif" style="width: 100%; height: 100%;" onclick="showImageInModal('img/BR11DS/SeptimoBarco.gif')">
+              <img src="img/BR11DS/01.png" class="d-block w-100" alt="...">
+            </swiper-slide>
+            <swiper-slide data-gif="img/Cormorant_II_49/QuintoBarco.gif">
+              <img src="img/Cormorant_II_49/01.png" class="d-block w-100" alt="...">
+            </swiper-slide>
+            <swiper-slide data-gif="img/Crystal_09/CuartoBarco.gif">
+              <img src="img/Crystal_09/01.png" class="d-block w-100" alt="...">
+            </swiper-slide>
+            <swiper-slide data-gif="img/hdpe_work_03/TercerBarco.gif">
+              <img src="img/hdpe_work_03/01.png" class="d-block w-100" alt="...">
+            </swiper-slide>
+            <swiper-slide data-gif="img/OCV1306/SegundoBarco.gif">
+              <img src="img/OCV1306/01.png" class="d-block w-100" alt="...">
+            </swiper-slide>
+            <swiper-slide data-gif="img/PG07DS/PrimerBarco.gif">
+              <img src="img/PG07DS/01.png" class="d-block w-100" alt="...">
+            </swiper-slide>
+          </swiper-container>
         </div>
     </div>
 </div>
@@ -308,16 +343,18 @@
         </div>
         <div class="brand">
             <img src="./img/xco_iconBlanco.png" alt="Logo de la marca">
-            <span>xcoti</span>
-        </div>
+            <span class="nunito-font">xcoti</span>        </div>
         <div></div>
     </div>
 </footer>    
 
 <!-- Modal Este modal es para las imagenes ampliadas-->
-<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+<div class="modal fade custom-modal" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+          </div>
           <div class="modal-body">
               <img id="modalImage" src="" class="img-fluid" alt="Imagen ampliada">
           </div>
@@ -329,11 +366,18 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 <script src="./src/js/index.js"></script>
+
 <script>
   function showImageInModal(imageSrc) {
       document.getElementById('modalImage').src = imageSrc;
   }
+
+
+
 </script>
 </body>
 </html>

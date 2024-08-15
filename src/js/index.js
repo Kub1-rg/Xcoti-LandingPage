@@ -1,4 +1,28 @@
 $(document).ready(function() {
+
+  var swiper = new Swiper('.mySwiper', {
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    spaceBetween: 30,
+    slidesPerView: 3,
+});
+
+document.querySelectorAll('swiper-slide').forEach(slide => {
+    slide.addEventListener('click', function() {
+        var gifUrl = this.getAttribute('data-gif');
+        var modalImage = document.getElementById('modalImage');
+        modalImage.src = gifUrl;
+        var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+        imageModal.show();
+    });
+});
+
   $('#españolBandera').on('click', function(e) {
       e.preventDefault();
       console.log('Hola');
@@ -10,6 +34,8 @@ $(document).ready(function() {
         
 
           // Actualizar el contenido de la página con las traducciones
+          $('#españolBandera').text(data.españolBandera);
+          $('#inglesBandera').text(data.inglesBandera);
           $('#primerTitulo').text(data.primerTitulo);
           $('#segundoTitulo').text(data.segundoTitulo);
           $('#descCripcionTitulo').text(data.descCripcionTitulo);
@@ -96,10 +122,10 @@ $(document).ready(function() {
   $('#inglesBandera').on('click', function(e){
     $.getJSON('./src/json/en.json', function (data) {
       // / Actualizar el contenido de la página con las traducciones
-      
+          $('#españolBandera').text(data.españolBandera);
+          $('#inglesBandera').text(data.inglesBandera);
           $('#primerTitulo').text(data.primerTitulo);
           $('#segundoTitulo').text(data.segundoTitulo);
-          // $('#segundoTitulo').css('highlight');
           $('#descCripcionTitulo').text(data.descCripcionTitulo);
           $('#primerSeccionPrimerParrafoMovil').text(data.primerSeccionPrimerParrafoMovil);
           $('#botonTexto').text(data.botonTexto);

@@ -1,4 +1,6 @@
 {
+    "españolBandera": "Español",
+    "inglesBandera": "Ingles",
     "primerTitulo": "Optimice sus",
     "segundoTitulo" : "Proyectos Navales",
     "descCripcionTitulo": "Construcción digital de buques accesible y eficiente para mejorar el rendimiento e innovación",
@@ -31,7 +33,8 @@
         
         "segundoTitulSeccionBarcos": "Demos juntos el gran paso.",
         "segundaDescSeccionBarcos": "No más barreras, no más excusas. Si deseas vivir la experiencia trabajando y teniendo tu propio equipo de ingeniería! de detalle y produccion. \n¡Xcoti te acerca a ello!.",
-        
+        "segundoTitulSeccionBarcosbotonTexto" : "Quieres saber como?",
+
 
         "primerSeccionTituloMovil": "FÁCIL ACCESO A LA BUENA ARQUITECTURA NAVAL.",
         "primerSeccionSubTituloMovil": "¡Superemos las barreras de la ingeniería!",
