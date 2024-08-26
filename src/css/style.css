@@ -74,6 +74,13 @@ body, html {
   font-size: 64px;
 }
 
+.custom-section p{
+  font-size: 28px;
+  font-weight: 400 !important;
+  color:#23242A !important;
+  ;
+}
+
 .h2-custom-section-size2{
   font-weight: 700;
   font-size: 52px;
