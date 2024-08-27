@@ -13,7 +13,25 @@ body, html {
   height: 758px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
+.fondoXcoti h1{
+  font-weight: 800;
+}
+.fondoXcoti span{
+  font-weight: 800;
+}
+.fondoXcoti p{
+  font-weight: 400;
+  font-size: 20;
+}
+.fondoXcoti .btn-primary{
+  height: 64px;
+  width: 536px;
+  border-radius: 32px;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 45px; /* Igual que la altura */
+  text-align: center; /* Asegura el centrado horizontal */
+}
 .fondoXcoti::before {
   content: "";
   position: absolute;
@@ -35,6 +53,38 @@ body, html {
   position: relative;
   z-index: 2; /* Coloca el contenido por encima de la capa de opacidad */
 }
+.service-section strong{
+  font-size: 18px;
+  font-weight: 600;
+  color:#111827  ;
+}
+
+.service-section p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #6B7280;
+}
+
+.p-custom-padding{
+  padding-left: 29px;
+}
+
+.h2-custom-section-size{
+  font-weight: 700;
+  font-size: 64px;
+}
+
+.custom-section p{
+  font-size: 28px;
+  font-weight: 400 !important;
+  color:#23242A !important;
+  ;
+}
+
+.h2-custom-section-size2{
+  font-weight: 700;
+  font-size: 52px;
+}
 
 .custom-navbar {
   border: 2px solid #e0dfdf; /* Ancho, estilo y color del borde */
@@ -44,7 +94,7 @@ body, html {
 .navbar-brand span {
   color: black;
   font-size: 2.2rem;
-  font-weight: 400 !important;
+  font-weight: 800 !important;
   margin-left: 10px;
 }
 
@@ -114,8 +164,8 @@ h1 .highlight {
 }
 
 .service-section .text-primary {
-  color: #a657ff !important;
-  font-weight: 900;
+  color: #8C30F5 !important;
+  font-weight: 800;
 }
 
 .service-section p {

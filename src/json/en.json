@@ -2,7 +2,7 @@
     
     "españolBandera": "Spanish",
     "inglesBandera": "English",
-    "primerTitulo": "Streamline Your",
+"primerTitulo": "Streamline Your",
     "segundoTitulo" : "Naval Projects",
     "descCripcionTitulo": "Efficient and Accessible Digital Shipbuilding for Enhanced Performance and Innovation",
     "primerSeccionPrimerParrafoMovil": "New App that leads to an Efficient and Accessible Digital Shipbuilding for Enhanced Performance and Innovation",
@@ -22,7 +22,7 @@
         "primerColumnaServiciosDescSFila": "Manage feedback from a single, integrated mailbox to streamline communication.",
 
         "segundaColumnaServiciosTituloSFila": "Secure Data Storage.",
-        "segundaColumnaServiciosDescSFila": "Ensure your project data is protected with high-level security measures and encrypted storage solutions.",
+        "segundaColumnaServiciosDescSFila": "Your project data is protected with high-level security measures and encrypted storage solutions.",
 
         "primerColumnaServiciosTituloTFila": "Task and Deadline Tracking.",
         "primerColumnaServiciosDescTFila": "Monitor your progress to ensure projects stay on track.",
@@ -34,8 +34,8 @@
         "descSeccionBarcos": "We believe the key for world marine pymes evolution is helping them to get all benefits of having an economical and easy access to good naval architecture for development of their ship products.",
         
         "segundoTitulSeccionBarcos": "Let’s can give the great step together.",
-        "segundaDescSeccionBarcos": "No more barriers, no more excuses. If you wish to live the experience working and having your own engineering team, for detail and production. Xcoti brings you closer to it!.",
-        "segundoTitulSeccionBarcosbotonTexto" : "How we do it?",
+        "segundaDescSeccionBarcos": "No more barriers, no more excuses. If you wish to live the experience working and having your own engineering team, xcoti brings you closer to it!.",
+        
 
         "primerSeccionTituloMovil": "EASY ACCESS TO GOOD NAVAL ARCHITECTURE.",
         "primerSeccionSubTituloMovil": "Let’s get over barriers of engineering!",
@@ -45,15 +45,14 @@
         "segundaSeccionSubTituloMovil": "Let’s can give the great step together",
         "segundaSeccionDescTituloMovil": "No more barriers, no more excuses. If you wish to live the experience working and having your own engineering team. XCoti brings you closer to it!.",
         
-        "tituloServiciosSeccionMavilUno": "Digital blueprint Management.",
-        "tituloServiciosSeccionMavilDos": "Cost Estimation Tools.",
+        "tituloServiciosSeccionMavilUno": "Digital Information Management.",
+        "tituloServiciosSeccionMavilDos": "Cost Estimation Tool.",
 
 
         "primerTituloSeccionCarrusel": "Here are some of our collaborations.",
         "primerDescSeccionCarrusel": "Discover the countries/regions we've proudly worked.",
 
-        "primerTituloSeccionContacto": "We also help empowering your business\n Meet",
-        "segundoTituloSeccionContacto": "XcoTween",
+        "primerTituloSeccionContacto": "We also help empowering your business\nMeet ...XcoTween",
         "primerDescSeccionContacto": "xcoti helps taking your company towards the 4.0 industry with xcotween.",
         "segundaDescSeccionContacto": "Send us a message and a member of the team will contact you",
         "seccionContactoMobileTitulo": "Meet ...XcoTween.",
@@ -63,7 +62,8 @@
         "botonSeccionContactoMobil": "Connect with us",
 
     
-        "footerDerechos": "© 2022 xcoti. Todos los derechos reservados"
+        "footerDerechos": "© 2024 xcoti. Todos los derechos reservados"
+
 
 
 

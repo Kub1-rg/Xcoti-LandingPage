@@ -1,15 +1,15 @@
 {
     "españolBandera": "Español",
     "inglesBandera": "Ingles",
-    "primerTitulo": "Optimice sus",
-    "segundoTitulo" : "Proyectos Navales",
-    "descCripcionTitulo": "Construcción digital de buques accesible y eficiente para mejorar el rendimiento e innovación",
-    "primerSeccionPrimerParrafoMovil": "Nueva aplicación que conduce a una construcción naval digital eficiente y accesible para mejorar el rendimiento y la innovación",
-    "botonTexto": "Contactanos",
+    "primerTitulo": "Agiliza tus",
+    "segundoTitulo" : "Proyectos Navales en tiempo real",
+    "descCripcionTitulo": "Construcción naval digital eficiente y accesible para mejorar el rendimiento y la innovación",
+    "primerSeccionPrimerParrafoMovil": "Un vínculo que conduce a una construcción naval digital eficiente y accesible para mejorar el rendimiento y la innovación",
+    "botonTexto": "Ponte en contacto",
     "menu": {
         "tituloMenu": "TODO LO QUE NECESITES",
         "subTituloTitulo": "Servicio todo en uno",
-        "descripcionSubTitulo": "Su solución integral para construcción naval, ingeniería y gestión de proyectos digitales",
+        "descripcionSubTitulo": "Su solución integral para construcción naval digital, ingeniería y gestión de proyectos",
         "primerSeccionServiciosTitulo": "Invitar a miembros del equipo",
         "primerSeccionServiciosDesc": "Agregue fácilmente gerentes de proyecto, ingenieros y otros miembros del equipo para colaborar en sus proyectos de construcción naval.",
 
@@ -17,53 +17,50 @@
         "segundaColumnaServiciosDescPFila": "Genere informes de progreso completos y compártalos con las partes interesadas para mantener a todos informados.",
 
         "primerColumnaServiciosTituloSFila": "Plataforma de comunicación unificada.",
-        "primerColumnaServiciosDescSFila": "Administre los comentarios desde un único buzón de correo integrado para agilizar la comunicación.",
+        "primerColumnaServiciosDescSFila": "Administre comentarios y retroalimentación desde un único entorno integrado para agilizar la comunicación.",
 
         "segundaColumnaServiciosTituloSFila": "Almacenamiento seguro de datos.",
-        "segundaColumnaServiciosDescSFila": "Asegúrese de que los datos de su proyecto estén protegidos con medidas de seguridad de alto nivel y soluciones de almacenamiento cifrado.",
+        "segundaColumnaServiciosDescSFila": "Los datos de su proyecto están protegidos con medidas de seguridad de alto nivel y soluciones de almacenamiento cifrado.",
 
-        "primerColumnaServiciosTituloTFila": "Plataforma de comunicación unificada.",
-        "primerColumnaServiciosDescTFila": "Administre los comentarios desde un único buzón de correo integrado para agilizar la comunicación.",
+        "primerColumnaServiciosTituloTFila": "Seguimiento de tareas y plazos.",
+        "primerColumnaServiciosDescTFila": "Supervise su progreso para garantizar el rumbo del proyecto.",
 
         "segundaColumnaServiciosTituloTFila": "Visualización y objetos digitales 3D.",
-        "segundaColumnaServiciosDescTFila": "Navegue y vea modelos 3D de componentes y metadatos del barco para una mayor precisión y planificación.",
+        "segundaColumnaServiciosDescTFila": "Navegue y vea modelos 3D de componentes y metadatos de la embarcación para una mayor precisión y planificación.",
 
-        "titulSeccionBarcos": "¡Superemos las barreras de ingeniería!",
-        "descSeccionBarcos": "Creemos que la clave para la evolución de las pymes marinas mundiales es ayudarlas a obtener todos los beneficios de tener un acceso fácil y económico a una buena arquitectura naval para el desarrollo de sus productos navales.",
+        "titulSeccionBarcos": "¡Superemos las barreras de ingeniería!.",
+        "descSeccionBarcos": "Creemos que la clave para la evolución de las pymes marinas es ayudarlas a obtener todos los beneficios de un acceso fácil y económico a buena ingeniería para el desarrollo de sus productos navales",
         
         "segundoTitulSeccionBarcos": "Demos juntos el gran paso.",
-        "segundaDescSeccionBarcos": "No más barreras, no más excusas. Si deseas vivir la experiencia trabajando y teniendo tu propio equipo de ingeniería! de detalle y produccion. \n¡Xcoti te acerca a ello!.",
-        "segundoTitulSeccionBarcosbotonTexto" : "Quieres saber como?",
+        "segundaDescSeccionBarcos": "No más barreras, no más excusas. Si deseas que tu negocio pueda vivir la experiencia de trabajar teniendo su propio equipo de ingeniería. ¡Xcoti te acercará a ello!",
+        
 
-
-        "primerSeccionTituloMovil": "FÁCIL ACCESO A LA BUENA ARQUITECTURA NAVAL.",
-        "primerSeccionSubTituloMovil": "¡Superemos las barreras de la ingeniería!",
-        "primerSeccionDescTituloMovil": "Creemos que la clave para la evolución de las pymes marinas mundiales es ayudarlas a obtener todos los beneficios de tener un acceso fácil y económico a una buena arquitectura naval para el desarrollo de sus productos navales.",
+        "primerSeccionTituloMovil": "FÁCIL ACCESO A BUENA ARQUITECTURA NAVAL.",
+        "primerSeccionSubTituloMovil": "¡Superemos las barreras de ingeniería!",
+        "primerSeccionDescTituloMovil": "Creemos que la clave para la evolución de las pymes marinas es ayudarlas a obtener todos los beneficios de un acceso fácil y económico a buena ingeniería para el desarrollo de sus productos navales",
 
         "segundaSeccionTituloMovil": "TU PROPIO EQUIPO DE INGENIERA.",
         "segundaSeccionSubTituloMovil": "Demos juntos el gran paso",
-        "segundaSeccionDescTituloMovil": "No más barreras, no más excusas. Si deseas vivir la experiencia trabajando y teniendo tu propio equipo de ingeniería de detalle y produccion. \n¡Xcoti te acerca a ello!.",
+        "segundaSeccionDescTituloMovil": "No más barreras, no más excusas. Si deseas que tu negocio pueda vivir la experiencia de trabajar teniendo su propio equipo de ingeniería. ¡Xcoti te acercará a ello!.",
         
         "tituloServiciosSeccionMavilUno": "Gestión de planos digitales.",
-        "tituloServiciosSeccionMavilDos": "Herramientas de estimación de costos.",
+        "tituloServiciosSeccionMavilDos": "Herramienta de estimación de costos.",
 
 
-        "primerTituloSeccionCarrusel": "Nuestras colaboraciones.",
-        "primerDescSeccionCarrusel": "Descubra los países/regiones en los que hemos trabajado ogullosamente.",
+        "primerTituloSeccionCarrusel": "Estas son algunas de nuestras colaboraciones.",
+        "primerDescSeccionCarrusel": "Descubra los países/regiones en los que hemos trabajado.",
 
-        "primerTituloSeccionContacto": "También ayudamos a potenciar tu negocio.\n Conoce...",
-        "segundoTituloSeccionContacto": "XcoTween",
-        "primerDescSeccionContacto": "Un programa que ayuda a llevar tu empresa hacia la industria 4.0.",
+        "primerTituloSeccionContacto": "También ayudamos a potenciar tu negocio.\nConoce...XcoTween",
+        "primerDescSeccionContacto": "xcoti ayuda a llevar tu empresa hacia la industria 4.0 con xcotween.",
         "segundaDescSeccionContacto": "Envíanos un mensaje y un miembro del equipo se comunicará contigo.",
         "seccionContactoMobileTitulo": "Conoce a ...XcoTween.",
-        "seccionContactoMobileDesc": "Un programa que ayuda a llevar tu empresa hacia la industria 4.0.",
+        "seccionContactoMobileDesc": "xcoti ayuda a llevar tu empresa hacia la industria 4.0 con xcotween.",
         "seccionContactonesDescMobil": "Envíanos un mensaje y un miembro del equipo se comunicará contigo.",
-        "botonContactanos": "Contactanos",
-        "botonSeccionContactoMobil": "Conecta con nosotros",
+        "botonContactanos": "Contáctanos",
+        "botonSeccionContactoMobil": "Contáctanos",
 
     
-        "footerDerechos": "© 2022 xcoti. Todos los derechos reservados"
-
+        "footerDerechos": "© 2024 xcoti. Todos los derechos reservados"
 
 
     }
