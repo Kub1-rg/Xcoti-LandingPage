@@ -548,10 +548,17 @@ text-align: left; /* Alinea el texto a la izquierda en dispositivos móviles */
 .service-section p {
 text-align: left !important; /* Alinea todos los párrafos a la izquierda en dispositivos móviles */
 padding-top: 10px !important;
+font-weight: 800;
 }
 
-.service-section .strong {
+.service-section strong {
 margin-bottom: 1rem !important;
+font-weight: 800 !important;
+}
+
+.navbar-brand img{
+height: 35px !important;
+width: 78.29px !important;
 }
 
 .service-section .col-md-6 {
@@ -561,6 +568,20 @@ margin-left: 20px !important;
 width: auto !important;
 }
 
+.custom-section-mobile p{
+  font-size: 13 !important;
+  font-weight: 700 !important;
+}
+
+.custom-section-mobile h2{
+  font-size: 20px !important;
+  font-weight: 800 !important;
+}
+
+.custom-section-mobile h4{
+  font-size: 16px !important;
+  font-weight: 800 !important;
+}
 .custom-carousel {
   display: block;
   height: 15rem;
@@ -614,7 +635,11 @@ padding-left: 50px;
 .btn-primary {
 background-color: #8C30F5;
 border-color: #8C30F5;
-width: 206px !important;
+width: 162px !important;
+height: 18px !important;
+font-size: 8px !important;
+font-weight: 700 !important;
+line-height: 1px !important;
 }
 
 .background-container {
