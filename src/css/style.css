@@ -583,7 +583,7 @@ width: auto !important;
   font-weight: 800 !important;
 }
 .custom-carousel {
-  display: block;
+  display: flex !important;
   height: 15rem;
   width: 19rem;
   margin-left: 14px;
