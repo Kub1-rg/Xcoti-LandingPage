@@ -23,7 +23,7 @@ document.querySelectorAll('swiper-slide').forEach(slide => {
     });
 });
 
-  $('#españolBandera').on('click', function(e) {
+  $('.españolBandera').on('click', function(e) {
       e.preventDefault();
       console.log('Hola');
 
@@ -119,7 +119,7 @@ document.querySelectorAll('swiper-slide').forEach(slide => {
       });
   });
 
-  $('#inglesBandera').on('click', function(e){
+  $('.inglesBandera').on('click', function(e){
     $.getJSON('./src/json/en.json', function (data) {
       // / Actualizar el contenido de la página con las traducciones
           $('#españolBandera').text(data.españolBandera);
