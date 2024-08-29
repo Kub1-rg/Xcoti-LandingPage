@@ -7,7 +7,7 @@
     <link href="./img/xco_icon" rel="xco_icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@50;100;200;300;400;500;600;700&display=swap">
     <link href="./src/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -27,7 +27,7 @@
             </ul>
         </div>
         <a class="navbar-brand d-flex align-items-right" href="#" aria-disabled="true">
-            <img src="./img/xco_icon.png" alt="Brand Logo">
+            <img style="height:43px; width: 97px;" src="./img/xco_icon.png" alt="Brand Logo">
             <span>xcoti</span>
         </a>
         
@@ -67,7 +67,7 @@
     <div class="container text-center">
       <h1 class="display-4 display-md-3 display-lg-1" id="primerTitulo">Streamline Your</h1> <h1 class="display-4 display-md-3 display-lg-1"><span class="highlight" id="segundoTitulo">Naval Projects</span></h1>
       <!-- Párrafo solo visible en pantallas grandes -->
-    <p class="lead d-none d-md-block" id="descCripcionTitulo">Efficient and Accessible Digital Shipbuilding for Enhanced Performance and Innovation</p>
+    <p class="lead d-none d-md-block" id="descCripcionTitulo">Efficient and Accessible Digital Shipbuilding for Enhanced <br>Performance and Innovation</p>
     
     <!-- Párrafo solo visible en móviles -->
     <p class="d-block d-md-none" id="primerSeccionPrimerParrafoMovil">New App that leads to an Efficient and Accessible Digital Shipbuilding for Enhanced Performance and Innovation</p>
@@ -179,9 +179,9 @@
             <div class="col-md-6 text-section px-5">
                 <h2 class="h2-custom-section-size2" id="segundoTitulSeccionBarcos">Let’s can give the great step together</h2>
                 <p  style="font-size: 24px" id="segundaDescSeccionBarcos">No more barriers, no more excuses. If you wish to live the experience working and having your own engineering team, for detail and production. Xcoti brings you closer to it!</p>
-                <li class="nav-item me-3">
-                  <a href="https://wa.me/+593969840240" class="btn btn-primary btn-lg" id="segundoTitulSeccionBarcosbotonTexto" target="_blank">How we do it</a>
-                </li>
+                <div class="d-flex justify-content-center py-1">
+                  <a href="https://wa.me/+593969840240" style="width: 300px;" class="btn btn-primary btn-lg" id="segundoTitulSeccionBarcosbotonTexto" target="_blank">How we do it</a>
+                </div>
               </div>
         </div>
     </div>
@@ -195,9 +195,9 @@
     <p style="font-size: 24px; font-weight: 400;"id="primerDescSeccionCarrusel">Discover the countries/regions we've proudly worked</p>
 </div>
 <div class="main-container">
-    <div class="background-container"></div>
+    <!--<div class="background-container"></div>-->
     <div class="carousel-container">
-        <div id="customCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
+        <div  id="customCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -243,33 +243,34 @@
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+                <span style="background: none; color: black;" class="carousel-control-prev-icon"></span>
                 <!-- <span class="visually-hidden">Previous</span> -->
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
+                <span style="background: none; color: black;" class="carousel-control-next-icon"></span>
                 <!-- <span class="visually-hidden">Next</span> -->
             </button>
         </div>
+        
         <div class="swiper-contenedor" style="border: 1px solid #8C30F5; border-radius: 15px; padding: 10px;">
           <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="10" slides-per-view="3">
             <swiper-slide data-gif="img/BR11DS/SeptimoBarco.gif" style="width: 100%; height: 100%;" onclick="showImageInModal('img/BR11DS/SeptimoBarco.gif')">
-              <img src="img/BR11DS/01.png" class="d-block w-100" alt="...">
+              <img src="img/BR11DS/Barco6Flag.png" class="d-block w-100" alt="...">
             </swiper-slide>
             <swiper-slide data-gif="img/Cormorant_II_49/QuintoBarco.gif">
-              <img src="img/Cormorant_II_49/01.png" class="d-block w-100" alt="...">
+              <img src="img/Cormorant_II_49/Barco5Flag.png" class="d-block w-100" alt="...">
             </swiper-slide>
             <swiper-slide data-gif="img/Crystal_09/CuartoBarco.gif">
-              <img src="img/Crystal_09/01.png" class="d-block w-100" alt="...">
+              <img src="img/Crystal_09/Barco4Flag.png" class="d-block w-100" alt="...">
             </swiper-slide>
             <swiper-slide data-gif="img/hdpe_work_03/TercerBarco.gif">
-              <img src="img/hdpe_work_03/01.png" class="d-block w-100" alt="...">
+              <img src="img/hdpe_work_03/Barco3Flag.png" class="d-block w-100" alt="...">
             </swiper-slide>
             <swiper-slide data-gif="img/OCV1306/SegundoBarco.gif">
-              <img src="img/OCV1306/01.png" class="d-block w-100" alt="...">
+              <img src="img/OCV1306/Barco2Flag.png" class="d-block w-100" alt="...">
             </swiper-slide>
             <swiper-slide data-gif="img/PG07DS/PrimerBarco.gif">
-              <img src="img/PG07DS/01.png" class="d-block w-100" alt="...">
+              <img src="img/PG07DS/Barco1Flag.png" class="d-block w-100" alt="...">
             </swiper-slide>
           </swiper-container>
         </div>
@@ -280,23 +281,25 @@
   <div class="container final-section text-center d-none d-md-block">
   <div class="row">
     <div class="col-lg-8 text-start">
-      <h1 style="font-size: 40px; font-weight: 400;" id="primerTituloSeccionContacto">We also help empowering your business<br>Meet ...</h1><h1><span style="color: #7A3FDB; font-size: 40px; font-weight: 400;" id="segundoTituloSeccionContacto">XcoTween</span></h1>
+      <h1 style="font-size: 40px; font-weight: 400;" id="primerTituloSeccionContacto">We also help empowering your business<br>Meet ... 
+        <span style="color: #7A3FDB; font-size: 40px; font-weight: 800;" id="segundoTituloSeccionContacto">XcoTween</span></h1>
     </div>
     <div class="col-lg-4">
 
     </div>
   </div>
+  
     <div class="row">
         <div class="col-lg-6 text-start">
             <!--<h1>We also help empowering your business<br>Meet ...<span style="color: #7A3FDB;">XcoTween</span></h1>-->
-            <p class="mt-4" id="primerDescSeccionContacto">xcoti helps taking your company towards the 4.0 industry with xcotween</p>
+            <p style="font-weight: 800; font-size: 28px;" class="mt-4" id="primerDescSeccionContacto">xcoti helps taking your company <br> towards the 4.0 industry with xcotween</p>
             <div class="mt-2">
                 <img src="./img/XcotiQr.png" alt="QR Code" class="qr-code">
             </div>
-            <a href="https://wa.me/+593969840240" class="btn contact-us-btn mt-3" id="botonContactanos" target="_blank">Contact us</a>
-            <div class="mt-4">
-                <p style="color: #7A3FDB;"><i class="bi bi-whatsapp"></i> Whatsapp</p>
-                <p style="color: #7A3FDB;"><i class="bi bi-envelope"></i> xcoti@mail.com</p>
+            <a href="https://wa.me/+593969840240" class="btn contact-us-btn mt-3 ms-n3" id="botonContactanos" target="_blank">Contact us</a>
+            <div class="mt-4 px-5">
+                <p style="color: #7A3FDB; font-weight: 700; font-size:10px;"><i class="bi bi-whatsapp"></i> Whatsapp</p>
+                <p style="color: #7A3FDB; font-weight: 700; font-size:10px;"><i class="bi bi-envelope"></i> xcoti@mail.com</p>
             </div>
         </div>
         <div class="col-lg-6 justify-content-center">
@@ -304,7 +307,7 @@
         </div>
     </div>
     <div class="row">
-        <p class="text-center mt-4" id="segundaDescSeccionContacto">Send us a message and a member of the team will contact you</p>
+        <p style="font-weight: 400; font-size: 15px;" class="mt-4 px-2 py-1" id="segundaDescSeccionContacto">Send us a message and a member of the team will contact you</p>
     </div>
 </div>
 <div class="container final-section-mobile text-center d-md-none">
@@ -312,7 +315,7 @@
     
   <img src="./img/XcotiImac.png" alt="iMac Image" class="img-fluid mobile-image my-3">
   
-  <p class="mt-4" id="seccionContactoMobileDesc">xcoti helps taking your company towards the 4.0 industry with xcotween</p>
+  <p style="font-weight: 800; font-size: 28px;" class="mt-4" id="seccionContactoMobileDesc">xcoti helps taking your company towards the 4.0 industry with xcotween</p>
   
   <div class="my-4">
       <img src="./img/XcotiQr.png" alt="QR Code" class="img-fluid qr-code-mobile">
@@ -328,17 +331,34 @@
   <p class="text-center mt-4" id="seccionContactonesDescMobil">Send us a message and a member of the team will contact you</p>
 </div>
 
-  <footer class="footer text-center text-lg-start">
+  <footer class="footer text-center text-lg-start d-none d-md-block">
+    
     <div class="container d-flex justify-content-between align-items-center">
-        <div class="text-left" id="footerDerechos">
-            © 2022 xcoti. All rights reserved
+        <div   class="text-left" id="footerDerechos">
+            © 2022 xcoti. All rights reserved           
         </div>
-        <div class="brand">
-            <img src="./img/xco_iconBlanco.png" alt="Logo de la marca">
-            <span class="nunito-font">xcoti</span>        </div>
+        <div style="width: 40px" class="brand">
+            <img style="height: 22px; width: 49px;" src="./img/xco_iconBlanco.png" alt="Logo de la marca">
+            <span style="font-weight: 700; font-size: 24px;" class="nunito-font">xcoti</span>        
+        </div>
         <div></div>
     </div>
+
 </footer>    
+
+<footer class=" footer text-center justify-content-center align-items-center d-md-none">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div   class="text-left" id="footerDerechos">
+        © 2022 xcoti. All rights reserved           
+    </div>
+    <div style="width: 40px" class="brand">
+        <img style="height: 22px; width: 49px;" src="./img/xco_iconBlanco.png" alt="Logo de la marca">
+        <span style="font-weight: 700; font-size: 24px;" class="nunito-font">xcoti</span>        
+    </div>
+    <div></div>
+</div>
+
+</footer>
 
 <!-- Modal Este modal es para las imagenes ampliadas-->
 <div class="modal fade custom-modal" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
