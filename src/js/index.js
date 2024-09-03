@@ -28,7 +28,9 @@ $(document).ready(function () {
 
   $('.españolBandera').on('click', function (e) {
     e.preventDefault();
-    console.log('Hola');
+    // console.log('Hola');
+    $('.inglesBandera').removeClass('selected');
+    $('.españolBandera').addClass('selected');
 
     // Realizar una solicitud AJAX para cargar el archivo JSON
     $.getJSON('./src/json/es.json', function (data) {
@@ -123,6 +125,9 @@ $(document).ready(function () {
   });
 
   $('.inglesBandera').on('click', function (e) {
+    $('.inglesBandera').addClass('selected');
+    $('.españolBandera').removeClass('selected');
+
     $.getJSON('./src/json/en.json', function (data) {
       // / Actualizar el contenido de la página con las traducciones
       $('#españolBandera').text(data.españolBandera);
@@ -139,7 +144,7 @@ $(document).ready(function () {
       $('#primerColumnaServiciosTitulo').text(data.menu.primerSeccionServiciosTitulo);
       $('#primerColumnaServiciosDesc').text(data.menu.primerSeccionServiciosDesc);
 
-      console.log(data.menu.segundoTituloSeccionContacto);
+      // console.log(data.menu.segundoTituloSeccionContacto);
 
       $('#segundaColumnaServiciosTituloPFila').text(data.menu.segundaColumnaServiciosTituloPFila);
       $('#segundaColumnaServiciosDescPFila').text(data.menu.segundaColumnaServiciosDescPFila);
