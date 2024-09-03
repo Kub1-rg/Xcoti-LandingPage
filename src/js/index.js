@@ -1,206 +1,209 @@
-$(document).ready(function() {
+$(document).ready(function () {
+  var currentYear = new Date().getFullYear();
+  $('.currentYear').text(currentYear);
+
 
   var swiper = new Swiper('.mySwiper', {
     pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+      el: '.swiper-pagination',
+      clickable: true,
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
     spaceBetween: 30,
     slidesPerView: 3,
-});
-
-document.querySelectorAll('swiper-slide').forEach(slide => {
-    slide.addEventListener('click', function() {
-        var gifUrl = this.getAttribute('data-gif');
-        var modalImage = document.getElementById('modalImage');
-        modalImage.src = gifUrl;
-        var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
-        imageModal.show();
-    });
-});
-
-  $('.españolBandera').on('click', function(e) {
-      e.preventDefault();
-      console.log('Hola');
-
-      // Realizar una solicitud AJAX para cargar el archivo JSON
-      $.getJSON('./src/json/es.json', function(data) {
-        // console.log(data);
-        // console.log(data.menu);
-        
-
-          // Actualizar el contenido de la página con las traducciones
-          $('#españolBandera').text(data.españolBandera);
-          $('#inglesBandera').text(data.inglesBandera);
-          $('#primerTitulo').text(data.primerTitulo);
-          $('#segundoTitulo').text(data.segundoTitulo);
-          $('#descCripcionTitulo').text(data.descCripcionTitulo);
-          $('#primerSeccionPrimerParrafoMovil').text(data.primerSeccionPrimerParrafoMovil);
-          $('#botonTexto').text(data.botonTexto);
-          $('#tituloMenu').text(data.menu.tituloMenu);
-          $('#subTituloTitulo').text(data.menu.subTituloTitulo);
-          $('#descripcionSubTitulo').text(data.menu.descripcionSubTitulo);
-
-          $('#primerColumnaServiciosTitulo').text(data.menu.primerSeccionServiciosTitulo);
-          $('#primerColumnaServiciosDesc').text(data.menu.primerSeccionServiciosDesc);
-
-          
-          $('#segundaColumnaServiciosTituloPFila').text(data.menu.segundaColumnaServiciosTituloPFila);
-          $('#segundaColumnaServiciosDescPFila').text(data.menu.segundaColumnaServiciosDescPFila);
-
-
-          $('#primerColumnaServiciosTituloSFila').text(data.menu.primerColumnaServiciosTituloSFila);
-          $('#primerColumnaServiciosDescSFila').text(data.menu.primerColumnaServiciosDescSFila);
-
-          $('#segundaColumnaServiciosTituloSFila').text(data.menu.segundaColumnaServiciosTituloSFila);
-          $('#segundaColumnaServiciosDescSFila').text(data.menu.segundaColumnaServiciosDescSFila);
-
-          $('#primerColumnaServiciosTituloTFila').text(data.menu.primerColumnaServiciosTituloTFila);
-          $('#primerColumnaServiciosDescTFila').text(data.menu.primerColumnaServiciosDescTFila);
-
-          $('#segundaColumnaServiciosTituloTFila').text(data.menu.segundaColumnaServiciosTituloTFila);
-          $('#segundaColumnaServiciosDescTFila').text(data.menu.segundaColumnaServiciosDescTFila);
-          
-          // ----------------| Sección de Servicios Movil |----------------
-          
-          $('#primerSeccionTituloMovil').text(data.menu.primerSeccionTituloMovil);
-          $('#primerSeccionSubTituloMovil').text(data.menu.primerSeccionSubTituloMovil);
-          $('#primerSeccionDescTituloMovil').text(data.menu.primerSeccionDescTituloMovil);
-          $('#tituloServiciosSeccionMavilUno').text(data.menu.tituloServiciosSeccionMavilUno);
-          $('#tituloServiciosSeccionMavilDos').text(data.menu.tituloServiciosSeccionMavilDos);
-
-          // ----------------| Segunda Sección de Servicios Movil |----------------
-          $('#segundaSeccionTituloMovil').text(data.menu.segundaSeccionTituloMovil);
-          $('#segundaSeccionSubTituloMovil').text(data.menu.segundaSeccionSubTituloMovil);
-          $('#segundaSeccionDescTituloMovil').text(data.menu.segundaSeccionDescTituloMovil);
-          // ----------------| FIN Segunda Sección de Servicios Movil |----------------
-
-          
-          // ----------------| FIN Sección de Servicios Movil |----------------
-
-          // ----------------| Sección de Barcos |----------------
-          $('#titulSeccionBarcos').text(data.menu.titulSeccionBarcos);
-          $('#descSeccionBarcos').text(data.menu.descSeccionBarcos);
-
-          $('#segundoTitulSeccionBarcos').text(data.menu.segundoTitulSeccionBarcos);
-          $('#segundaDescSeccionBarcos').text(data.menu.segundaDescSeccionBarcos);
-          // ----------------| FIN Sección de Barcos |----------------
-          
-          
-          // ----------------| Sección de Carrusel |----------------
-          
-          $('#primerTituloSeccionCarrusel').text(data.menu.primerTituloSeccionCarrusel);
-          $('#primerDescSeccionCarrusel').text(data.menu.primerDescSeccionCarrusel);
-
-          // ----------------| FIN Sección de Carrusel |----------------
-
-
-          // ----------------| Sección de Footer |----------------
-          
-          $('#primerTituloSeccionContacto').text(data.menu.primerTituloSeccionContacto);
-          console.log(data.menu.segundoTituloSeccionContacto);
-          $('#segundoTituloSeccionContacto').text(data.menu.segundoTituloSeccionContacto);
-          $('#primerDescSeccionContacto').text(data.menu.primerDescSeccionContacto);
-          $('#segundaDescSeccionContacto').text(data.menu.segundaDescSeccionContacto);
-          $('#seccionContactoMobileTitulo').text(data.menu.seccionContactoMobileTitulo);
-          $('#seccionContactonesDescMobil').text(data.menu.seccionContactonesDescMobil);
-          $('#seccionContactoMobileDesc').text(data.menu.seccionContactoMobileDesc);
-          $('#botonContactanos').text(data.menu.botonContactanos);
-          $('#botonSeccionContactoMobil').text(data.menu.botonSeccionContactoMobil);
-
-          // ----------------| FIN Sección de Carrusel |----------------
-
-      }).fail(function() {
-          console.error('No se pudo cargar el archivo JSON.');
-      });
   });
 
-  $('.inglesBandera').on('click', function(e){
+  document.querySelectorAll('swiper-slide').forEach(slide => {
+    slide.addEventListener('click', function () {
+      var gifUrl = this.getAttribute('data-gif');
+      var modalImage = document.getElementById('modalImage');
+      modalImage.src = gifUrl;
+      var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+      imageModal.show();
+    });
+  });
+
+  $('.españolBandera').on('click', function (e) {
+    e.preventDefault();
+    console.log('Hola');
+
+    // Realizar una solicitud AJAX para cargar el archivo JSON
+    $.getJSON('./src/json/es.json', function (data) {
+      // console.log(data);
+      // console.log(data.menu);
+
+
+      // Actualizar el contenido de la página con las traducciones
+      $('#españolBandera').text(data.españolBandera);
+      $('#inglesBandera').text(data.inglesBandera);
+      $('#primerTitulo').text(data.primerTitulo);
+      $('#segundoTitulo').text(data.segundoTitulo);
+      $('#descCripcionTitulo').text(data.descCripcionTitulo);
+      $('#primerSeccionPrimerParrafoMovil').text(data.primerSeccionPrimerParrafoMovil);
+      $('#botonTexto').text(data.botonTexto);
+      $('#tituloMenu').text(data.menu.tituloMenu);
+      $('#subTituloTitulo').text(data.menu.subTituloTitulo);
+      $('#descripcionSubTitulo').text(data.menu.descripcionSubTitulo);
+
+      $('#primerColumnaServiciosTitulo').text(data.menu.primerSeccionServiciosTitulo);
+      $('#primerColumnaServiciosDesc').text(data.menu.primerSeccionServiciosDesc);
+
+
+      $('#segundaColumnaServiciosTituloPFila').text(data.menu.segundaColumnaServiciosTituloPFila);
+      $('#segundaColumnaServiciosDescPFila').text(data.menu.segundaColumnaServiciosDescPFila);
+
+
+      $('#primerColumnaServiciosTituloSFila').text(data.menu.primerColumnaServiciosTituloSFila);
+      $('#primerColumnaServiciosDescSFila').text(data.menu.primerColumnaServiciosDescSFila);
+
+      $('#segundaColumnaServiciosTituloSFila').text(data.menu.segundaColumnaServiciosTituloSFila);
+      $('#segundaColumnaServiciosDescSFila').text(data.menu.segundaColumnaServiciosDescSFila);
+
+      $('#primerColumnaServiciosTituloTFila').text(data.menu.primerColumnaServiciosTituloTFila);
+      $('#primerColumnaServiciosDescTFila').text(data.menu.primerColumnaServiciosDescTFila);
+
+      $('#segundaColumnaServiciosTituloTFila').text(data.menu.segundaColumnaServiciosTituloTFila);
+      $('#segundaColumnaServiciosDescTFila').text(data.menu.segundaColumnaServiciosDescTFila);
+
+      // ----------------| Sección de Servicios Movil |----------------
+
+      $('#primerSeccionTituloMovil').text(data.menu.primerSeccionTituloMovil);
+      $('#primerSeccionSubTituloMovil').text(data.menu.primerSeccionSubTituloMovil);
+      $('#primerSeccionDescTituloMovil').text(data.menu.primerSeccionDescTituloMovil);
+      $('#tituloServiciosSeccionMavilUno').text(data.menu.tituloServiciosSeccionMavilUno);
+      $('#tituloServiciosSeccionMavilDos').text(data.menu.tituloServiciosSeccionMavilDos);
+
+      // ----------------| Segunda Sección de Servicios Movil |----------------
+      $('#segundaSeccionTituloMovil').text(data.menu.segundaSeccionTituloMovil);
+      $('#segundaSeccionSubTituloMovil').text(data.menu.segundaSeccionSubTituloMovil);
+      $('#segundaSeccionDescTituloMovil').text(data.menu.segundaSeccionDescTituloMovil);
+      // ----------------| FIN Segunda Sección de Servicios Movil |----------------
+
+
+      // ----------------| FIN Sección de Servicios Movil |----------------
+
+      // ----------------| Sección de Barcos |----------------
+      $('#titulSeccionBarcos').text(data.menu.titulSeccionBarcos);
+      $('#descSeccionBarcos').text(data.menu.descSeccionBarcos);
+
+      $('#segundoTitulSeccionBarcos').text(data.menu.segundoTitulSeccionBarcos);
+      $('#segundaDescSeccionBarcos').text(data.menu.segundaDescSeccionBarcos);
+      // ----------------| FIN Sección de Barcos |----------------
+
+
+      // ----------------| Sección de Carrusel |----------------
+
+      $('#primerTituloSeccionCarrusel').text(data.menu.primerTituloSeccionCarrusel);
+      $('#primerDescSeccionCarrusel').text(data.menu.primerDescSeccionCarrusel);
+
+      // ----------------| FIN Sección de Carrusel |----------------
+
+
+      // ----------------| Sección de Footer |----------------
+
+      $('#primerTituloSeccionContacto').text(data.menu.primerTituloSeccionContacto);
+      console.log(data.menu.segundoTituloSeccionContacto);
+      $('#segundoTituloSeccionContacto').text(data.menu.segundoTituloSeccionContacto);
+      $('#primerDescSeccionContacto').text(data.menu.primerDescSeccionContacto);
+      $('#segundaDescSeccionContacto').text(data.menu.segundaDescSeccionContacto);
+      $('#seccionContactoMobileTitulo').text(data.menu.seccionContactoMobileTitulo);
+      $('#seccionContactonesDescMobil').text(data.menu.seccionContactonesDescMobil);
+      $('#seccionContactoMobileDesc').text(data.menu.seccionContactoMobileDesc);
+      $('#botonContactanos').text(data.menu.botonContactanos);
+      $('#botonSeccionContactoMobil').text(data.menu.botonSeccionContactoMobil);
+
+      // ----------------| FIN Sección de Carrusel |----------------
+
+    }).fail(function () {
+      console.error('No se pudo cargar el archivo JSON.');
+    });
+  });
+
+  $('.inglesBandera').on('click', function (e) {
     $.getJSON('./src/json/en.json', function (data) {
       // / Actualizar el contenido de la página con las traducciones
-          $('#españolBandera').text(data.españolBandera);
-          $('#inglesBandera').text(data.inglesBandera);
-          $('#primerTitulo').text(data.primerTitulo);
-          $('#segundoTitulo').text(data.segundoTitulo);
-          $('#descCripcionTitulo').text(data.descCripcionTitulo);
-          $('#primerSeccionPrimerParrafoMovil').text(data.primerSeccionPrimerParrafoMovil);
-          $('#botonTexto').text(data.botonTexto);
-          $('#tituloMenu').text(data.menu.tituloMenu);
-          $('#subTituloTitulo').text(data.menu.subTituloTitulo);
-          $('#descripcionSubTitulo').text(data.menu.descripcionSubTitulo);
+      $('#españolBandera').text(data.españolBandera);
+      $('#inglesBandera').text(data.inglesBandera);
+      $('#primerTitulo').text(data.primerTitulo);
+      $('#segundoTitulo').text(data.segundoTitulo);
+      $('#descCripcionTitulo').text(data.descCripcionTitulo);
+      $('#primerSeccionPrimerParrafoMovil').text(data.primerSeccionPrimerParrafoMovil);
+      $('#botonTexto').text(data.botonTexto);
+      $('#tituloMenu').text(data.menu.tituloMenu);
+      $('#subTituloTitulo').text(data.menu.subTituloTitulo);
+      $('#descripcionSubTitulo').text(data.menu.descripcionSubTitulo);
 
-          $('#primerColumnaServiciosTitulo').text(data.menu.primerSeccionServiciosTitulo);
-          $('#primerColumnaServiciosDesc').text(data.menu.primerSeccionServiciosDesc);
+      $('#primerColumnaServiciosTitulo').text(data.menu.primerSeccionServiciosTitulo);
+      $('#primerColumnaServiciosDesc').text(data.menu.primerSeccionServiciosDesc);
 
-          console.log(data.menu.segundoTituloSeccionContacto);
-          
-          $('#segundaColumnaServiciosTituloPFila').text(data.menu.segundaColumnaServiciosTituloPFila);
-          $('#segundaColumnaServiciosDescPFila').text(data.menu.segundaColumnaServiciosDescPFila);
+      console.log(data.menu.segundoTituloSeccionContacto);
 
-
-          $('#primerColumnaServiciosTituloSFila').text(data.menu.primerColumnaServiciosTituloSFila);
-          $('#primerColumnaServiciosDescSFila').text(data.menu.primerColumnaServiciosDescSFila);
-
-          $('#segundaColumnaServiciosTituloSFila').text(data.menu.segundaColumnaServiciosTituloSFila);
-          $('#segundaColumnaServiciosDescSFila').text(data.menu.segundaColumnaServiciosDescSFila);
-
-          $('#primerColumnaServiciosTituloTFila').text(data.menu.primerColumnaServiciosTituloTFila);
-          $('#primerColumnaServiciosDescTFila').text(data.menu.primerColumnaServiciosDescTFila);
-
-          $('#segundaColumnaServiciosTituloTFila').text(data.menu.segundaColumnaServiciosTituloTFila);
-          $('#segundaColumnaServiciosDescTFila').text(data.menu.segundaColumnaServiciosDescTFila);
-          
-          // ----------------| Sección de Servicios Movil |----------------
-          
-          $('#primerSeccionTituloMovil').text(data.menu.primerSeccionTituloMovil);
-          $('#primerSeccionSubTituloMovil').text(data.menu.primerSeccionSubTituloMovil);
-          $('#primerSeccionDescTituloMovil').text(data.menu.primerSeccionDescTituloMovil);
-          $('#tituloServiciosSeccionMavilUno').text(data.menu.tituloServiciosSeccionMavilUno);
-          $('#tituloServiciosSeccionMavilDos').text(data.menu.tituloServiciosSeccionMavilDos);
-
-          // ----------------| Segunda Sección de Servicios Movil |----------------
-          $('#segundaSeccionTituloMovil').text(data.menu.segundaSeccionTituloMovil);
-          $('#segundaSeccionSubTituloMovil').text(data.menu.segundaSeccionSubTituloMovil);
-          $('#segundaSeccionDescTituloMovil').text(data.menu.segundaSeccionDescTituloMovil);
-          // ----------------| FIN Segunda Sección de Servicios Movil |----------------
-
-          
-          // ----------------| FIN Sección de Servicios Movil |----------------
-
-          // ----------------| Sección de Barcos |----------------
-          $('#titulSeccionBarcos').text(data.menu.titulSeccionBarcos);
-          $('#descSeccionBarcos').text(data.menu.descSeccionBarcos);
-
-          $('#segundoTitulSeccionBarcos').text(data.menu.segundoTitulSeccionBarcos);
-          $('#segundaDescSeccionBarcos').text(data.menu.descSeccionBarcos);
-          // ----------------| FIN Sección de Barcos |----------------
-          
-          
-          // ----------------| Sección de Carrusel |----------------
-          
-          $('#primerTituloSeccionCarrusel').text(data.menu.primerTituloSeccionCarrusel);
-          $('#primerDescSeccionCarrusel').text(data.menu.primerDescSeccionCarrusel);
-
-          // ----------------| FIN Sección de Carrusel |----------------
+      $('#segundaColumnaServiciosTituloPFila').text(data.menu.segundaColumnaServiciosTituloPFila);
+      $('#segundaColumnaServiciosDescPFila').text(data.menu.segundaColumnaServiciosDescPFila);
 
 
-          // ----------------| Sección de Footer |----------------
-          
-          $('#primerTituloSeccionContacto').text(data.menu.primerTituloSeccionContacto);
-          $('#primerDescSeccionContacto').text(data.menu.primerDescSeccionContacto);
-          $('#segundaDescSeccionContacto').text(data.menu.segundaDescSeccionContacto);
-          $('#seccionContactoMobileTitulo').text(data.menu.seccionContactoMobileTitulo);
-          $('#seccionContactonesDescMobil').text(data.menu.seccionContactonesDescMobil);
-          $('#seccionContactoMobileDesc').text(data.menu.seccionContactoMobileDesc);
-          $('#botonContactanos').text(data.menu.botonContactanos);
-          $('#botonSeccionContactoMobil').text(data.menu.botonSeccionContactoMobil);
+      $('#primerColumnaServiciosTituloSFila').text(data.menu.primerColumnaServiciosTituloSFila);
+      $('#primerColumnaServiciosDescSFila').text(data.menu.primerColumnaServiciosDescSFila);
 
-          // ----------------| FIN Sección de Carrusel |----------------
-    }).fail(function(){
+      $('#segundaColumnaServiciosTituloSFila').text(data.menu.segundaColumnaServiciosTituloSFila);
+      $('#segundaColumnaServiciosDescSFila').text(data.menu.segundaColumnaServiciosDescSFila);
+
+      $('#primerColumnaServiciosTituloTFila').text(data.menu.primerColumnaServiciosTituloTFila);
+      $('#primerColumnaServiciosDescTFila').text(data.menu.primerColumnaServiciosDescTFila);
+
+      $('#segundaColumnaServiciosTituloTFila').text(data.menu.segundaColumnaServiciosTituloTFila);
+      $('#segundaColumnaServiciosDescTFila').text(data.menu.segundaColumnaServiciosDescTFila);
+
+      // ----------------| Sección de Servicios Movil |----------------
+
+      $('#primerSeccionTituloMovil').text(data.menu.primerSeccionTituloMovil);
+      $('#primerSeccionSubTituloMovil').text(data.menu.primerSeccionSubTituloMovil);
+      $('#primerSeccionDescTituloMovil').text(data.menu.primerSeccionDescTituloMovil);
+      $('#tituloServiciosSeccionMavilUno').text(data.menu.tituloServiciosSeccionMavilUno);
+      $('#tituloServiciosSeccionMavilDos').text(data.menu.tituloServiciosSeccionMavilDos);
+
+      // ----------------| Segunda Sección de Servicios Movil |----------------
+      $('#segundaSeccionTituloMovil').text(data.menu.segundaSeccionTituloMovil);
+      $('#segundaSeccionSubTituloMovil').text(data.menu.segundaSeccionSubTituloMovil);
+      $('#segundaSeccionDescTituloMovil').text(data.menu.segundaSeccionDescTituloMovil);
+      // ----------------| FIN Segunda Sección de Servicios Movil |----------------
+
+
+      // ----------------| FIN Sección de Servicios Movil |----------------
+
+      // ----------------| Sección de Barcos |----------------
+      $('#titulSeccionBarcos').text(data.menu.titulSeccionBarcos);
+      $('#descSeccionBarcos').text(data.menu.descSeccionBarcos);
+
+      $('#segundoTitulSeccionBarcos').text(data.menu.segundoTitulSeccionBarcos);
+      $('#segundaDescSeccionBarcos').text(data.menu.descSeccionBarcos);
+      // ----------------| FIN Sección de Barcos |----------------
+
+
+      // ----------------| Sección de Carrusel |----------------
+
+      $('#primerTituloSeccionCarrusel').text(data.menu.primerTituloSeccionCarrusel);
+      $('#primerDescSeccionCarrusel').text(data.menu.primerDescSeccionCarrusel);
+
+      // ----------------| FIN Sección de Carrusel |----------------
+
+
+      // ----------------| Sección de Footer |----------------
+
+      $('#primerTituloSeccionContacto').text(data.menu.primerTituloSeccionContacto);
+      $('#primerDescSeccionContacto').text(data.menu.primerDescSeccionContacto);
+      $('#segundaDescSeccionContacto').text(data.menu.segundaDescSeccionContacto);
+      $('#seccionContactoMobileTitulo').text(data.menu.seccionContactoMobileTitulo);
+      $('#seccionContactonesDescMobil').text(data.menu.seccionContactonesDescMobil);
+      $('#seccionContactoMobileDesc').text(data.menu.seccionContactoMobileDesc);
+      $('#botonContactanos').text(data.menu.botonContactanos);
+      $('#botonSeccionContactoMobil').text(data.menu.botonSeccionContactoMobil);
+
+      // ----------------| FIN Sección de Carrusel |----------------
+    }).fail(function () {
       console.error('No se pudo cargar el archivo JSON.');
 
     })
