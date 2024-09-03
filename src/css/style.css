@@ -4,6 +4,11 @@ body, html {
   margin: 0;
   font-family: 'Nunito', sans-serif !important;
 }
+
+.texto-morado {
+  color: #8C30F5;
+}
+
 .fondoXcoti {
   position: relative;
   background-image: url("../../img/FondoXcoti.jpg");
@@ -296,6 +301,9 @@ padding: 20px;
 .carousel-container {
 position: relative;
 z-index: 2;
+justify-content: center;
+align-items: center;
+
 }
 .carousel-inner {
 border-radius: 0 20px 20px 0;
@@ -583,12 +591,27 @@ width: auto !important;
   font-weight: 800 !important;
 }
 .custom-carousel {
-  display: flex !important;
+  display: flex;
   height: 15rem;
   width: 19rem;
-  margin-left: 14px;
-  margin-top: -1rem;
+  margin-left: 35px; /* Puedes ajustar o eliminar esto si interfiere con el centrado */
+  margin-top: -1rem; /* Puedes ajustar o eliminar esto si interfiere con el centrado */
   border-radius: 30px;
+  align-items: center;
+}
+
+#primerDescSeccionCarrusel{
+  display: none;
+}
+
+.primerTituloSeccionCarrusel{
+  font-size: 21px !important;
+}
+
+.texto-morado-xcoti{
+  margin-left: 2rem;
+  display: flex !important;
+  font-size: 21px !important;
 }
 
 .background-container {

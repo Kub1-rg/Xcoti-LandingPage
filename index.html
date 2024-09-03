@@ -1,261 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XCOTI</title>
-    <link href="./img/xco_icon" rel="xco_icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@50;100;200;300;400;500;600;700&display=swap">
-    <link href="./src/css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XCOTI</title>
+  <link href="./img/xco_icon" rel="xco_icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@50;100;200;300;400;500;600;700&display=swap">
+  <link href="./src/css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+  </style>
 </head>
+
 <body>
   <nav class="navbar custom-navbar">
     <div class="container d-flex justify-content-between align-items-center">
-        <div class="d-flex">
-            <ul class="navbar-nav d-flex flex-row align-items-center">
-                <li class="nav-item me-3">
-                    <a class="nav-link lead d-none d-md-block" href="#" aria-disabled="true">Home</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link lead d-none d-lg-block" href="https://wa.me/+593969840240" target="_blank">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <a class="navbar-brand d-flex align-items-right" href="#" aria-disabled="true">
-            <img style="height:43px; width: 97px;" src="./img/xco_icon.png" alt="Brand Logo">
-            <span>xcoti</span>
-        </a>
-        
-        <div class="d-flex">
-            <ul class="navbar-nav d-flex flex-row align-items-center">
-                <li class="nav-item me-3">
-                    <a class="nav-link lead d-none d-md-block d-lg-none" href="https://wa.me/+593969840240">Contact</a>
-                </li>
-            </ul>
-        </div>
+      <div class="d-flex">
+        <ul class="navbar-nav d-flex flex-row align-items-center">
+          <li class="nav-item me-3">
+            <a class="nav-link lead d-none d-md-block" href="#" aria-disabled="true">Home</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link lead d-none d-lg-block" href="https://wa.me/+593969840240" target="_blank">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <a class="navbar-brand d-flex align-items-right" href="#" aria-disabled="true">
+        <img style="height:43px; width: 97px;" src="./img/xco_icon.png" alt="Brand Logo">
+        <span>xcoti</span>
+      </a>
 
-        <!-- Contenedor para las banderas -->
-        <div class="d-flex align-items-center">
-          <div class="dropdown d-md-none">
-              <button  class="btn btn-secondary dropdown-toggle" type="button" id="menuToggle" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
-                  Menu
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="menuToggle">
-                  <li><a class="dropdown-item españolBandera" href="#" id="españolBandera">Español</a></li>
-                  <li><a class="dropdown-item inglesBandera" href="#" id="inglesBandera">Ingles</a></li>
-              </ul>
-          </div>
-          <div id="languageMenu" class="d-none d-md-flex">
-              <a class="me-2 selected españolBandera" id="españolBandera">
-                Español 
-              </a>
-              <a class="me-2 inglesBandera" id="inglesBandera">
-                Ingles
-              </a>
-          </div>
+      <div class="d-flex">
+        <ul class="navbar-nav d-flex flex-row align-items-center">
+          <li class="nav-item me-3">
+            <a class="nav-link lead d-none d-md-block d-lg-none" href="https://wa.me/+593969840240">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contenedor para las banderas -->
+      <div class="d-flex align-items-center">
+        <div class="dropdown d-md-none">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="menuToggle" data-bs-toggle="dropdown"
+            aria-expanded="false" style="color: black;">
+            Menu
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="menuToggle">
+            <li><a class="dropdown-item españolBandera" href="#" id="españolBandera">Español</a></li>
+            <li><a class="dropdown-item inglesBandera" href="#" id="inglesBandera">Ingles</a></li>
+          </ul>
+        </div>
+        <div id="languageMenu" class="d-none d-md-flex">
+          <a class="me-2 selected españolBandera" id="españolBandera">
+            Español
+          </a>
+          <a class="me-2 inglesBandera" id="inglesBandera">
+            Ingles
+          </a>
+        </div>
       </div>
     </div>
-</nav>
+  </nav>
 
 
   <div class="fondoXcoti d-flex align-items-center justify-content-center">
     <div class="container text-center">
-      <h1  style="font-weight: 800; font-size: 44px;" class="display-4 display-md-3 display-lg-1" id="primerTitulo">Streamline Your</h1> <h1 class="display-4 display-md-3 display-lg-1"><span style="font-weight: 800; font-size: 44px;" class="highlight" id="segundoTitulo">Naval Projects</span></h1>
+      <h1 style="font-weight: 800; font-size: 44px;" class="display-4 display-md-3 display-lg-1" id="primerTitulo">
+        Streamline Your</h1>
+      <h1 class="display-4 display-md-3 display-lg-1"><span style="font-weight: 800; font-size: 44px;" class="highlight"
+          id="segundoTitulo">Naval Projects</span></h1>
       <!-- Párrafo solo visible en pantallas grandes -->
-    <p class="lead d-none d-md-block" id="descCripcionTitulo">Efficient and Accessible Digital Shipbuilding for Enhanced <br>Performance and Innovation</p>
-    
-    <!-- Párrafo solo visible en móviles -->
-    <p style="font-weight: 400; font-size: 10px; color:#3F3F3F;" class="d-block d-md-none" id="primerSeccionPrimerParrafoMovil">New App that leads to an Efficient and Accessible<br> Digital Shipbuilding for Enhanced Performance and <br> Innovation</p>
+      <p class="lead d-none d-md-block" id="descCripcionTitulo">Efficient and Accessible Digital Shipbuilding for
+        Enhanced <br>Performance and Innovation</p>
 
-      <a href="https://wa.me/+593969840240" class="btn btn-primary btn-lg" id="botonTexto" target="_blank">Get in touch</a>
+      <!-- Párrafo solo visible en móviles -->
+      <p style="font-weight: 400; font-size: 10px; color:#3F3F3F;" class="d-block d-md-none"
+        id="primerSeccionPrimerParrafoMovil">New App that leads to an Efficient and Accessible<br> Digital Shipbuilding
+        for Enhanced Performance and <br> Innovation</p>
+
+      <a href="https://wa.me/+593969840240" class="btn btn-primary btn-lg" id="botonTexto" target="_blank">Get in
+        touch</a>
     </div>
   </div>
 
   <div class="service-section py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 d-flex flex-column justify-content-center">
-            <h2 style="font-weight: 800; font-size: 16px;"class="text-primary service-h2" id="tituloMenu">EVERYTHING YOU NEED</h2>
-            <h3 style="font-weight: 800; font-size: 30px;" class="service-h3" id="subTituloTitulo">All-in-one Service</h3>
-            <p class="lead d-none d-md-block" style="color: #6B7280;" id="descripcionSubTitulo">Your Comprehensive Solution for Digital Shipbuilding, Engineering, and Project Management</p>
-          </div>
-          <div class="col-lg-8">
-            <div class="row">
-              <div class="col-md-6 ">
-                <p><i class="bi bi-check text-primary"></i> <strong id="primerColumnaServiciosTitulo">Invite team members</strong></p>
-                <p class="lead d-none d-md-block p-custom-padding" id="primerColumnaServiciosDesc">Easily add project managers, engineers, and other team members to collaborate on your naval construction projects.</p>
-              </div>
-              <div class="col-md-6 ">
-                <p><i class="bi bi-check text-primary"></i> <strong id="segundaColumnaServiciosTituloPFila">Process Reporting</strong></p>
-                <p class="lead d-none d-md-block p-custom-padding" id="segundaColumnaServiciosDescPFila">Generate comprehensive progress reports and share them with stakeholders to keep everyone informed.</p>
-              </div>
-              <div class="col-md-6 ">
-                <p><i class="bi bi-check text-primary"></i> <strong id="primerColumnaServiciosTituloSFila">Unified Communication Platform</strong></p>
-                <p class="lead d-none d-md-block p-custom-padding" id="primerColumnaServiciosDescSFila">Manage feedback from a single, integrated mailbox to streamline communication.</p>
-              </div>
-              <!--Digital blueprint members only movil-->
-              <div class="col-md-6  d-md-none">
-                <p><i class="bi bi-check text-primary "></i> <strong id="tituloServiciosSeccionMavilUno">Digital blueprint Management</strong></p>
-              </div>
-              <!--Digital blueprint members only movil-->
-              <div class="col-md-6  d-md-none">
-                <p><i class="bi bi-check text-primary"></i> <strong id="tituloServiciosSeccionMavilDos">Cost Estimation Tools</strong></p>
-              </div>
-              <div class="col-md-6 ">
-                <p><i class="bi bi-check text-primary"></i> <strong id="segundaColumnaServiciosTituloSFila">Secure Data Storage</strong></p>
-                <p class="lead d-none d-md-block p-custom-padding" id="segundaColumnaServiciosDescSFila">Ensure your project data is protected with high-level security measures and encrypted storage solutions.</p>
-              </div>
-              <div class="col-md-6">
-                <p><i class="bi bi-check text-primary"></i> <strong id="primerColumnaServiciosTituloTFila">Task and Deadline Tracking</strong></p>
-                <p class="lead d-none d-md-block p-custom-padding" id="primerColumnaServiciosDescTFila">Monitor your progress to ensure projects stay on track.</p>
-              </div>
-              <div class="col-md-6">
-                <p><i class="bi bi-check text-primary"></i> <strong id="segundaColumnaServiciosTituloTFila">3D Digital Object and Visualization</strong></p>
-                <p class="lead d-none d-md-block p-custom-padding" id="segundaColumnaServiciosDescTFila">Navigate and view 3D models of ship components and metadata for better accuracy and planning.</p>
-              </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 d-flex flex-column justify-content-center">
+          <h2 style="font-weight: 800; font-size: 16px;" class="text-primary service-h2" id="tituloMenu">EVERYTHING YOU
+            NEED</h2>
+          <h3 style="font-weight: 800; font-size: 30px;" class="service-h3" id="subTituloTitulo">All-in-one Service</h3>
+          <p class="lead d-none d-md-block" style="color: #6B7280;" id="descripcionSubTitulo">Your Comprehensive
+            Solution for Digital Shipbuilding, Engineering, and Project Management</p>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-md-6 ">
+              <p><i class="bi bi-check text-primary"></i> <strong id="primerColumnaServiciosTitulo">Invite team
+                  members</strong></p>
+              <p class="lead d-none d-md-block p-custom-padding" id="primerColumnaServiciosDesc">Easily add project
+                managers, engineers, and other team members to collaborate on your naval construction projects.</p>
+            </div>
+            <div class="col-md-6 ">
+              <p><i class="bi bi-check text-primary"></i> <strong id="segundaColumnaServiciosTituloPFila">Process
+                  Reporting</strong></p>
+              <p class="lead d-none d-md-block p-custom-padding" id="segundaColumnaServiciosDescPFila">Generate
+                comprehensive progress reports and share them with stakeholders to keep everyone informed.</p>
+            </div>
+            <div class="col-md-6 ">
+              <p><i class="bi bi-check text-primary"></i> <strong id="primerColumnaServiciosTituloSFila">Unified
+                  Communication Platform</strong></p>
+              <p class="lead d-none d-md-block p-custom-padding" id="primerColumnaServiciosDescSFila">Manage feedback
+                from a single, integrated mailbox to streamline communication.</p>
+            </div>
+            <!--Digital blueprint members only movil-->
+            <div class="col-md-6  d-md-none">
+              <p><i class="bi bi-check text-primary "></i> <strong id="tituloServiciosSeccionMavilUno">Digital blueprint
+                  Management</strong></p>
+            </div>
+            <!--Digital blueprint members only movil-->
+            <div class="col-md-6  d-md-none">
+              <p><i class="bi bi-check text-primary"></i> <strong id="tituloServiciosSeccionMavilDos">Cost Estimation
+                  Tools</strong></p>
+            </div>
+            <div class="col-md-6 ">
+              <p><i class="bi bi-check text-primary"></i> <strong id="segundaColumnaServiciosTituloSFila">Secure Data
+                  Storage</strong></p>
+              <p class="lead d-none d-md-block p-custom-padding" id="segundaColumnaServiciosDescSFila">Ensure your
+                project data is protected with high-level security measures and encrypted storage solutions.</p>
+            </div>
+            <div class="col-md-6">
+              <p><i class="bi bi-check text-primary"></i> <strong id="primerColumnaServiciosTituloTFila">Task and
+                  Deadline Tracking</strong></p>
+              <p class="lead d-none d-md-block p-custom-padding" id="primerColumnaServiciosDescTFila">Monitor your
+                progress to ensure projects stay on track.</p>
+            </div>
+            <div class="col-md-6">
+              <p><i class="bi bi-check text-primary"></i> <strong id="segundaColumnaServiciosTituloTFila">3D Digital
+                  Object and Visualization</strong></p>
+              <p class="lead d-none d-md-block p-custom-padding" id="segundaColumnaServiciosDescTFila">Navigate and view
+                3D models of ship components and metadata for better accuracy and planning.</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </div>
 
   <!--Section for mobile-->
   <section class="custom-section-mobile d-md-none">
     <div class="container">
-    <div class="row align-items-left my-1 py-1">
-      <h4 style="font-weight: 800; font-size: 13px;" class="text-primary" id="primerSeccionTituloMovil">EASY ACCESS TO GOOD NAVAL ARCHITECTURE</h4>
-      <h2 style="font-weight: 700; font-size: 20px; color:#23242A;" id="primerSeccionSubTituloMovil">Let’s get over barriers of engineering!</h2>
-    </div>
-        <div class="row align-items-center my-1">
-            <div class="col-8 text-left">
-                <!--<h4 class="text-primary ">EASY ACCESS TO GOOD NAVAL ARCHITECTURE</h4>
+      <div class="row align-items-left my-1 py-1">
+        <h4 style="font-weight: 800; font-size: 13px;" class="text-primary" id="primerSeccionTituloMovil">EASY ACCESS TO
+          GOOD NAVAL ARCHITECTURE</h4>
+        <h2 style="font-weight: 700; font-size: 20px; color:#23242A;" id="primerSeccionSubTituloMovil">Let’s get over
+          barriers of engineering!</h2>
+      </div>
+      <div class="row align-items-center my-1">
+        <div class="col-8 text-left">
+          <!--<h4 class="text-primary ">EASY ACCESS TO GOOD NAVAL ARCHITECTURE</h4>
                 <h2>Let’s get over barriers of engineering!</h2>-->
-                <p  id="primerSeccionDescTituloMovil">We believe the key for world marine pymes evolution is helping them to get all benefits of having an economical and easy access to good naval architecture for development of their ship products.</p>
-            </div>
-            <div class="col-4 text-center">
-              <img src="./img/ImagenMovil1.png" alt="Barriers" class="img-fluid my-1 py-1">
-          </div>
+          <p id="primerSeccionDescTituloMovil">We believe the key for world marine pymes evolution is helping them to
+            get all benefits of having an economical and easy access to good naval architecture for development of their
+            ship products.</p>
         </div>
+        <div class="col-4 text-center">
+          <img src="./img/ImagenMovil1.png" alt="Barriers" class="img-fluid my-1 py-1">
+        </div>
+      </div>
 
-        <div class="row align-items-left my-1 py-5">
-          <h4 class="text-primary" id="segundaSeccionTituloMovil">YOUR OWN ENGINEERING TEAM</h4>
-          <h2 id="segundaSeccionSubTituloMovil">Let’s can give the great step together</h2>
+      <div class="row align-items-left my-1 py-5">
+        <h4 class="text-primary" id="segundaSeccionTituloMovil">YOUR OWN ENGINEERING TEAM</h4>
+        <h2 id="segundaSeccionSubTituloMovil">Let’s can give the great step together</h2>
+      </div>
+      <div class="row align-items-center my-1 py-1">
+        <div class="col-4 text-center order-md-2">
+          <img src="./img/ImagenMovil2.png" alt="Engineering Team" class="img-fluid my-3">
         </div>
-        <div class="row align-items-center my-1 py-1">
-          <div class="col-4 text-center order-md-2">
-            <img src="./img/ImagenMovil2.png" alt="Engineering Team" class="img-fluid my-3">
-        </div>
-            <div class="col-8 text-left">
-                <!--<h4 class="text-primary">YOUR OWN ENGINEERING TEAM</h4>
+        <div class="col-8 text-left">
+          <!--<h4 class="text-primary">YOUR OWN ENGINEERING TEAM</h4>
                 <h2>Let’s can give the great step together</h2>-->
-                <p id="segundaSeccionDescTituloMovil">No more barriers, no more excuses. If you wish to live the experience working and having your own engineering team. Xcoti brings you closer to it!</p>
-            </div>
+          <p id="segundaSeccionDescTituloMovil">No more barriers, no more excuses. If you wish to live the experience
+            working and having your own engineering team. Xcoti brings you closer to it!</p>
         </div>
-    </div>
-</section>
-
-  <section class="custom-section d-none d-md-block">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-5">
-                <img src="./img/Imagen1.png" alt="Image 1" class="img-fluid rounded-img ">
-            </div>
-            <div class="col-md-7 text-section">
-                <h2 class="px-5 h2-custom-section-size" id="titulSeccionBarcos">Let’s get over barriers of engineering!</h2>
-                <p style="margin-top: 40px; font-size: 28px;" class="px-5" id="descSeccionBarcos">We believe the key for world marine pymes evolution is helping them to get all benefits of having an economical and easy access to good naval architecture for development of their ship products.</p>
-                <div class="col-md-12 d-flex justify-content-center">
-                  <img src="./img/Imagen2.png" alt="Image 2" class="img-fluid rounded-img distance-img2">
-              </div>
-            </div>
-        </div>
-        <div class="row align-items-center mt-5 py-5">
-            <div class="col-md-6 d-flex justify-content-center ">
-                <img src="./img/Imagen3.png" alt="Image 3" class="img-fluid rounded-img">
-            </div>
-            <div class="col-md-6 text-section px-5">
-                <h2 class="h2-custom-section-size2" id="segundoTitulSeccionBarcos">Let’s can give the great step together</h2>
-                <p  style="font-size: 24px" id="segundaDescSeccionBarcos">No more barriers, no more excuses. If you wish to live the experience working and having your own engineering team, for detail and production. Xcoti brings you closer to it!</p>
-                <div class="d-flex justify-content-center py-1">
-                  <a href="https://wa.me/+593969840240" style="width: 300px;" class="btn btn-primary btn-lg" id="segundoTitulSeccionBarcosbotonTexto" target="_blank">How we do it</a>
-                </div>
-              </div>
-        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Seccion del contenedor  -->
-   <!-- Seccion del contenedor -->
-<div>
-   <div class="text-center">
-    <h2 style="font-size: 56px; font-weight: 700;" id="primerTituloSeccionCarrusel">Here are some of our collaborations</h2>
-    <p style="font-size: 24px; font-weight: 400;"id="primerDescSeccionCarrusel">Discover the countries/regions we've proudly worked</p>
-</div>
-<div class="main-container">
-    <!--<div class="background-container"></div>-->
-    <div class="carousel-container">
-        <div  id="customCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="5" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/BR11DS/SeptimoBarco.gif')">
-                    <img src="img/BR11DS/01.png" class="d-block w-100" alt="...">
-                  </a>    
-                  <!-- <div class="boat-info">
+  <section class="custom-section d-none d-md-block">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5">
+          <img src="./img/Imagen1.png" alt="Image 1" class="img-fluid rounded-img ">
+        </div>
+        <div class="col-md-7 text-section">
+          <h2 class="px-5 h2-custom-section-size" id="titulSeccionBarcos">Let’s get over barriers of engineering!</h2>
+          <p style="margin-top: 40px; font-size: 28px;" class="px-5" id="descSeccionBarcos">We believe the key for world
+            marine pymes evolution is helping them to get all benefits of having an economical and easy access to good
+            naval architecture for development of their ship products.</p>
+          <div class="col-md-12 d-flex justify-content-center">
+            <img src="./img/Imagen2.png" alt="Image 2" class="img-fluid rounded-img distance-img2">
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center mt-5 py-5">
+        <div class="col-md-6 d-flex justify-content-center ">
+          <img src="./img/Imagen3.png" alt="Image 3" class="img-fluid rounded-img">
+        </div>
+        <div class="col-md-6 text-section px-5">
+          <h2 class="h2-custom-section-size2" id="segundoTitulSeccionBarcos">Let’s can give the great step together</h2>
+          <p style="font-size: 24px" id="segundaDescSeccionBarcos">No more barriers, no more excuses. If you wish to
+            live the experience working and having your own engineering team, for detail and production. Xcoti brings
+            you closer to it!</p>
+          <div class="d-flex justify-content-center py-1">
+            <a href="https://wa.me/+593969840240" style="width: 300px;" class="btn btn-primary btn-lg"
+              id="segundoTitulSeccionBarcosbotonTexto" target="_blank">How we do it</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seccion del contenedor -->
+  <div>
+    <div class="text-center">
+      <h2 class="texto-morado texto-morado-xcoti" style="display: none; font-weight: 700;">xcoti</h2>
+      <h2 class="primerTituloSeccionCarrusel" style="font-size: 56px; font-weight: 700;" id="primerTituloSeccionCarrusel">Here are some of our
+        collaborations</h2>
+      <p style="font-size: 24px; font-weight: 400;" id="primerDescSeccionCarrusel">Discover the countries/regions we've
+        proudly worked</p>
+    </div>
+    <div class="main-container">
+      <!--<div class="background-container"></div>-->
+      <div class="carousel-container">
+        <div id="customCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="5" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
+                onclick="showImageInModal('img/BR11DS/SeptimoBarco.gif')">
+                <img src="img/BR11DS/Barco6Flag.png" class="d-block w-100" alt="...">
+              </a>
+              <!-- <div class="boat-info">
                     <div class="boat-title">Quinto Barco</div>
                     <div class="boat-description">Descripción del quinto barco.</div>
                 </div>             -->
-              </div>
-                <div class="carousel-item">
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/Cormorant_II_49/QuintoBarco.gif')">
-                    <img src="img/Cormorant_II_49/01.png" class="d-block w-100" alt="...">
-                  </a>                
-                </div>
-                <div class="carousel-item">
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/Crystal_09/CuartoBarco.gif')">
-                    <img src="img/Crystal_09/01.png" class="d-block w-100" alt="...">
-                  </a>
-                </div>
-                <div class="carousel-item">
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/hdpe_work_03/TercerBarco.gif')">
-                    <img src="img/hdpe_work_03/01.png" class="d-block w-100" alt="...">
-                  </a>
-                </div>
-                <div class="carousel-item">
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/OCV1306/SegundoBarco.gif')">
-                    <img src="img/OCV1306/01.png" class="d-block w-100" alt="...">
-                  </a>
-                </div>
-                <div class="carousel-item">
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImageInModal('img/PG07DS/PrimerBarco.gif')">
-                    <img src="img/PG07DS/01.png" class="d-block w-100" alt="...">
-                  </a>
-                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
-                <span style="background: none; color: black;" class="carousel-control-prev-icon"></span>
-                <!-- <span class="visually-hidden">Previous</span> -->
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
-                <span style="background: none; color: black;" class="carousel-control-next-icon"></span>
-                <!-- <span class="visually-hidden">Next</span> -->
-            </button>
+            <div class="carousel-item">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
+                onclick="showImageInModal('img/Cormorant_II_49/QuintoBarco.gif')">
+                <img src="img/Cormorant_II_49/Barco5Flag.png" class="d-block w-100" alt="...">
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
+                onclick="showImageInModal('img/Crystal_09/CuartoBarco.gif')">
+                <img src="img/Crystal_09/Barco4Flag.png" class="d-block w-100" alt="...">
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
+                onclick="showImageInModal('img/hdpe_work_03/TercerBarco.gif')">
+                <img src="img/hdpe_work_03/Barco3Flag.png" class="d-block w-100" alt="...">
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
+                onclick="showImageInModal('img/OCV1306/SegundoBarco.gif')">
+                <img src="img/OCV1306/Barco2Flag.png" class="d-block w-100" alt="...">
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
+                onclick="showImageInModal('img/PG07DS/PrimerBarco.gif')">
+                <img src="img/PG07DS/Barco1Flag.png" class="d-block w-100" alt="...">
+              </a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+            <span style="background: none; color: black;" class="carousel-control-prev-icon"></span>
+            <!-- <span class="visually-hidden">Previous</span> -->
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+            <span style="background: none; color: black;" class="carousel-control-next-icon"></span>
+            <!-- <span class="visually-hidden">Next</span> -->
+          </button>
         </div>
-        
+
         <div class="swiper-contenedor" style="border: 1px solid #8C30F5; border-radius: 15px; padding: 10px;">
-          <swiper-container style="--swiper-navigation-color: #7A3FDB; --swiper-pagination-color: #7A3FDB;" class="mySwiper" pagination="true" pagination-clickable="true" space-between="10" slides-per-view="3" navigation="true">
-            <swiper-slide data-gif="img/BR11DS/SeptimoBarco.gif" style="width: 100%; height: 100%;" onclick="showImageInModal('img/BR11DS/SeptimoBarco.gif')">
+          <swiper-container style="--swiper-navigation-color: #7A3FDB; --swiper-pagination-color: #7A3FDB;"
+            class="mySwiper" pagination="true" pagination-clickable="true" space-between="10" slides-per-view="3"
+            navigation="true">
+            <swiper-slide data-gif="img/BR11DS/SeptimoBarco.gif" style="width: 100%; height: 100%;"
+              onclick="showImageInModal('img/BR11DS/SeptimoBarco.gif')">
               <img src="img/BR11DS/Barco6Flag.png" class="d-block w-100" alt="...">
             </swiper-slide>
             <swiper-slide data-gif="img/Cormorant_II_49/QuintoBarco.gif">
@@ -275,80 +326,90 @@
             </swiper-slide>
           </swiper-container>
         </div>
+      </div>
     </div>
-</div>
-</div>
+  </div>
 
   <div class="container final-section text-center d-none d-md-block">
-  <div class="row">
-    <div class="col-lg-8 text-start">
-      <h1 style="font-size: 40px; font-weight: 400;" id="primerTituloSeccionContacto">We also help empowering your business<br>Meet ... 
-        <span style="color: #7A3FDB; font-size: 40px; font-weight: 800;" id="segundoTituloSeccionContacto">XcoTween</span></h1>
-    </div>
-    <div class="col-lg-4">
+    <div class="row">
+      <div class="col-lg-8 text-start">
+        <h1 style="font-size: 40px; font-weight: 400;" id="primerTituloSeccionContacto">We also help empowering your
+          business<br>Meet ...
+          <span style="color: #7A3FDB; font-size: 40px; font-weight: 800;"
+            id="segundoTituloSeccionContacto">XcoTween</span>
+        </h1>
+      </div>
+      <div class="col-lg-4">
 
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 text-start">
+        <!--<h1>We also help empowering your business<br>Meet ...<span style="color: #7A3FDB;">XcoTween</span></h1>-->
+        <p style="font-weight: 800; font-size: 28px;" class="mt-4" id="primerDescSeccionContacto">xcoti helps taking
+          your company <br> towards the 4.0 industry with xcotween</p>
+        <div class="mt-2">
+          <img src="./img/XcotiQr.png" alt="QR Code" class="qr-code">
+        </div>
+        <a href="https://wa.me/+593969840240" class="btn contact-us-btn mt-3 ms-n3" id="botonContactanos"
+          target="_blank">Contact us</a>
+        <div class="mt-4 px-5">
+          <p style="color: #7A3FDB; font-weight: 700; font-size:10px;"><i class="bi bi-whatsapp"></i> Whatsapp</p>
+          <p style="color: #7A3FDB; font-weight: 700; font-size:10px;"><i class="bi bi-envelope"></i> xcoti@mail.com</p>
+        </div>
+      </div>
+      <div class="col-lg-6 justify-content-center">
+        <img src="./img/XcotiImac.png" alt="iMac Image" class="imac-image">
+      </div>
+    </div>
+    <div class="row">
+      <p style="font-weight: 400; font-size: 15px;" class="mt-4 px-2 py-1" id="segundaDescSeccionContacto">Send us a
+        message and a member of the team will contact you</p>
     </div>
   </div>
-  
-    <div class="row">
-        <div class="col-lg-6 text-start">
-            <!--<h1>We also help empowering your business<br>Meet ...<span style="color: #7A3FDB;">XcoTween</span></h1>-->
-            <p style="font-weight: 800; font-size: 28px;" class="mt-4" id="primerDescSeccionContacto">xcoti helps taking your company <br> towards the 4.0 industry with xcotween</p>
-            <div class="mt-2">
-                <img src="./img/XcotiQr.png" alt="QR Code" class="qr-code">
-            </div>
-            <a href="https://wa.me/+593969840240" class="btn contact-us-btn mt-3 ms-n3" id="botonContactanos" target="_blank">Contact us</a>
-            <div class="mt-4 px-5">
-                <p style="color: #7A3FDB; font-weight: 700; font-size:10px;"><i class="bi bi-whatsapp"></i> Whatsapp</p>
-                <p style="color: #7A3FDB; font-weight: 700; font-size:10px;"><i class="bi bi-envelope"></i> xcoti@mail.com</p>
-            </div>
-        </div>
-        <div class="col-lg-6 justify-content-center">
-            <img src="./img/XcotiImac.png" alt="iMac Image" class="imac-image">
-        </div>
-    </div>
-    <div class="row">
-        <p style="font-weight: 400; font-size: 15px;" class="mt-4 px-2 py-1" id="segundaDescSeccionContacto">Send us a message and a member of the team will contact you</p>
-    </div>
-</div>
-<div class="container final-section-mobile text-center d-md-none">
-  <h2 style="font-weight: 700; font-size: 40px;" class="mobile-title" id="seccionContactoMobileTitulo">Meet <span style="font-weight: 700; font-size: 40px;" class="highlight-text">...XcoTween</span></h2>
-    
-  <img src="./img/XcotiImac.png" alt="iMac Image" class="img-fluid mobile-image my-3">
-  
-  <p style="font-weight: 600; font-size: 20px;" class="mt-4" id="seccionContactoMobileDesc">xcoti helps taking your company towards the 4.0 industry with xcotween</p>
-  
-  <div class="my-4">
+  <div class="container final-section-mobile text-center d-md-none">
+    <h2 style="font-weight: 700; font-size: 40px;" class="mobile-title" id="seccionContactoMobileTitulo">Meet <span
+        style="font-weight: 700; font-size: 40px;" class="highlight-text">...XcoTween</span></h2>
+
+    <img src="./img/XcotiImac.png" alt="iMac Image" class="img-fluid mobile-image my-3">
+
+    <p style="font-weight: 600; font-size: 20px;" class="mt-4" id="seccionContactoMobileDesc">xcoti helps taking your
+      company towards the 4.0 industry with xcotween</p>
+
+    <div class="my-4">
       <img src="./img/XcotiQr.png" alt="QR Code" class="img-fluid qr-code-mobile">
-  </div>
-  
-  <a href="https://wa.me/+593969840240" class="btn connect-btn my-3" id="botonSeccionContactoMobil" target="_blank">Connect with us</a>
-  
-  <div class="contact-info mt-4">
+    </div>
+
+    <a href="https://wa.me/+593969840240" class="btn connect-btn my-3" id="botonSeccionContactoMobil"
+      target="_blank">Connect with us</a>
+
+    <div class="contact-info mt-4">
       <p style="font-weight: 700; font-size: 10px;"><i class="bi bi-whatsapp"></i> Whatsapp</p>
       <p style="font-weight: 700; font-size: 10px;"><i class="bi bi-envelope"></i> proyectos@xcoti.com</p>
-  </div>
-  
-  <p style="font-weight: 400; font-size: 12px;" class="text-center mt-4" id="seccionContactonesDescMobil">Send us a message and a member of the team will contact you</p>
-</div>
-
-  <footer class="footer text-center text-lg-start d-none d-md-block">
-    
-    <div class="container d-flex justify-content-between align-items-center">
-        <div   class="text-left" id="footerDerechos">
-            © 2022 xcoti. All rights reserved           
-        </div>
-        <div style="width: 40px" class="brand">
-            <img style="height: 22px; width: 49px;" src="./img/xco_iconBlanco.png" alt="Logo de la marca">
-            <span style="font-weight: 700; font-size: 24px;" class="nunito-font">xcoti</span>        
-        </div>
-        <div></div>
     </div>
 
-</footer>    
+    <p style="font-weight: 400; font-size: 12px;" class="text-center mt-4" id="seccionContactonesDescMobil">Send us a
+      message and a member of the team will contact you</p>
+  </div>
 
-<footer class=" footer text-center justify-content-center align-items-center d-md-none">
-  <!--<div class="container d-flex justify-content-between align-items-center">
+  <footer class="footer text-center text-lg-start d-none d-md-block">
+
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="text-left" id="footerDerechos">
+        © 2022 xcoti. All rights reserved
+      </div>
+      <div style="width: 40px" class="brand">
+        <img style="height: 22px; width: 49px;" src="./img/xco_iconBlanco.png" alt="Logo de la marca">
+        <span style="font-weight: 700; font-size: 24px;" class="nunito-font">xcoti</span>
+      </div>
+      <div></div>
+    </div>
+
+  </footer>
+
+  <footer class=" footer text-center justify-content-center align-items-center d-md-none">
+    <!--<div class="container d-flex justify-content-between align-items-center">
     <div   class="text-left" id="footerDerechos">
         © 2022 xcoti. All rights reserved           
     </div>
@@ -358,48 +419,50 @@
     </div>
     <div></div>
 </div>-->
-<div class="container d-flex flex-column justify-content-center align-items-center">
-  <div  class="brand py-2">
-    <img style="height: 16px; width: 33px;" src="./img/xco_iconBlanco.png" alt="Logo de la marca">
-    <span style="font-weight: 700; font-size: 15px;" class="nunito-font">xcoti</span>        
-</div>
-  <div style="font-weight: 400; font-size: 10px;" class="text-center" id="footerDerechos">
-      © 2022 xcoti. All rights reserved           
-  </div>
-  <div></div>
-
-</footer>
-
-<!-- Modal Este modal es para las imagenes ampliadas-->
-<div class="modal fade custom-modal" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
-          </div>
-          <div class="modal-body">
-              <img id="modalImage" src="" class="img-fluid" alt="Imagen ampliada">
-          </div>
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+      <div class="brand py-2">
+        <img style="height: 16px; width: 33px;" src="./img/xco_iconBlanco.png" alt="Logo de la marca">
+        <span style="font-weight: 700; font-size: 15px;" class="nunito-font">xcoti</span>
       </div>
+      <div style="font-weight: 400; font-size: 10px;" class="text-center" id="footerDerechos">
+        © 2022 xcoti. All rights reserved
+      </div>
+      <div></div>
+
+  </footer>
+
+  <!-- Modal Este modal es para las imagenes ampliadas-->
+  <div class="modal fade custom-modal" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+        </div>
+        <div class="modal-body">
+          <img id="modalImage" src="" class="img-fluid" alt="Imagen ampliada">
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<script src="./src/js/index.js"></script>
+  <script src="./src/js/index.js"></script>
 
-<script>
-  function showImageInModal(imageSrc) {
+  <script>
+    function showImageInModal(imageSrc) {
       document.getElementById('modalImage').src = imageSrc;
-  }
+    }
 
 
 
-</script>
+  </script>
 </body>
+
 </html>
