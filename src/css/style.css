@@ -127,7 +127,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 150px;
+  padding-left: 205px;
 }
 
 .navbar-nav {
@@ -307,6 +307,7 @@ h1 {
 .footer .brand {
   display: flex;
   align-items: center;
+  padding-right: 250px;
 }
 
 .footer .brand img {
@@ -576,8 +577,11 @@ margin-right: -3px;
   }
 
   .fondoXcoti h1 {
-    font-size: 2rem;
+    font-size: 49px !important;
     /* Ajusta el tamaño de la fuente en móvil */
+  }
+  .fondoXcoti span{
+    font-size: 49px;
   }
 
   .fondoXcoti p {
@@ -716,7 +720,7 @@ margin: 10px 0;
     border-color: #8C30F5;
     width: 162px !important;
     height: 18px !important;
-    font-size: 8px !important;
+    font-size: 11px !important;
     font-weight: 700 !important;
     line-height: 1px !important;
   }
@@ -733,6 +737,11 @@ margin: 10px 0;
     width: 65%;
     height: 105%;
     z-index: 1;
+  }
+  .footer .brand {
+    display: flex;
+    align-items: center;
+    padding-right: 0px;
   }
 }
 
@@ -759,7 +768,7 @@ margin: 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 50px;
+    padding-left: 205px;
   }
 }
 
