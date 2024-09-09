@@ -1029,3 +1029,37 @@ margin: 10px 0;
   border-radius: 2px;
   /* Opción de agregar un borde redondeado */
 }
+/* Position the top and bottom GIFs */
+.gif-container-left .gif-box-top,
+.gif-container-right .gif-box-top {
+  position: absolute;
+  top: 10%; /* Adjust to move the top GIF down/up */
+}
+
+.gif-container-left .gif-box-bottom,
+.gif-container-right .gif-box-bottom {
+  position: absolute;
+  bottom: 10%; /* Adjust to move the bottom GIF down/up */
+}
+
+.gif-box img {
+  width: 150px;  /* Adjust size as needed */
+  height: auto;
+  border-radius: 8px; /* Optional styling for the GIFs */
+}
+
+/* Positioning the left and right containers */
+.gif-container-left {
+  left: 5%;  /* Adjust to move it further inside/outside */
+}
+
+.gif-container-right {
+  right: 5%;  /* Adjust to move it further inside/outside */
+}
+
+.fondoXcoti .gif-container-left,
+.fondoXcoti .gif-container-right {
+  position: absolute;
+  width: 150px; /* Ensuring the correct width for the GIFs */
+  height: 100%; /* Make sure the containers take up the full height */
+}
