@@ -1,7 +1,7 @@
 {
     
-    "españolBandera": "Spanish",
-    "inglesBandera": "English",
+    "españolBandera": "ESP",
+    "inglesBandera": "ENG",
 "primerTitulo": "Streamline Your",
     "segundoTitulo" : "Naval Projects",
     "descCripcionTitulo": "Efficient and Accessible Digital Shipbuilding for Enhanced Performance and Innovation",
@@ -53,10 +53,10 @@
         "primerDescSeccionCarrusel": "Discover the countries/regions we've proudly worked.",
 
         "primerTituloSeccionContacto": "We also help empowering your business\nMeet ...XcoTween",
-        "primerDescSeccionContacto": "xcoti helps taking your company towards the 4.0 industry with xcotween.",
+        "primerDescSeccionContacto": "xcoti helps taking your company towards the industry 4.0 with xcotween.",
         "segundaDescSeccionContacto": "Send us a message and a member of the team will contact you",
         "seccionContactoMobileTitulo": "Meet ...XcoTween.",
-        "seccionContactoMobileDesc": "xcoti helps taking your company towards the 4.0 industry with xcotween.",
+        "seccionContactoMobileDesc": "xcoti helps taking your company towards the industry 4.0 with xcotween.",
         "seccionContactonesDescMobil": "Send us a message and a member of the team will contact you",
         "botonContactanos": "Contact Us",
         "botonSeccionContactoMobil": "Connect with us",
