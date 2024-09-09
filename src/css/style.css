@@ -1034,23 +1034,25 @@ margin: 10px 0;
 .gif-container-right .gif-box-top {
   position: absolute;
   top: 10%; /* Adjust to move the top GIF down/up */
+  left: -11%;
 }
 
 .gif-container-left .gif-box-bottom,
 .gif-container-right .gif-box-bottom {
   position: absolute;
   bottom: 10%; /* Adjust to move the bottom GIF down/up */
+  left: -11%;
 }
 
 .gif-box img {
-  width: 150px;  /* Adjust size as needed */
+  width: auto;  /* Adjust size as needed */
   height: auto;
   border-radius: 8px; /* Optional styling for the GIFs */
 }
 
 /* Positioning the left and right containers */
 .gif-container-left {
-  left: 5%;  /* Adjust to move it further inside/outside */
+  left: 10%;  /* Adjust to move it further inside/outside */
 }
 
 .gif-container-right {
@@ -1059,7 +1061,30 @@ margin: 10px 0;
 
 .fondoXcoti .gif-container-left,
 .fondoXcoti .gif-container-right {
+  width: 250px; /* Ensuring the correct width for the GIFs */
+  height: 85%; /* Make sure the containers take up the full height */
+}
+
+.gif-position1{
   position: absolute;
-  width: 150px; /* Ensuring the correct width for the GIFs */
-  height: 100%; /* Make sure the containers take up the full height */
+  top: 55%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+ background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.gif-position2{
+  position: absolute;
+  top: 55%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+ background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
 }
