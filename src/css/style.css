@@ -891,7 +891,7 @@ margin: 10px 0;
 .fondoXcoti .gif-container-left,
 .fondoXcoti .gif-container-right {
   width: 150px !important; /* Ensuring the correct width for the GIFs */
-  height: 85%  !important; /* Make sure the containers take up the full height */
+  height: 75%  !important; /* Make sure the containers take up the full height */
 }
 
 .gif-position1{
@@ -1105,14 +1105,14 @@ margin: 10px 0;
 .gif-container-right .gif-box-top {
   position: absolute;
   top: 10%; /* Adjust to move the top GIF down/up */
-  left: -11%;
+  left: -7.9%;
 }
 
 .gif-container-left .gif-box-bottom,
 .gif-container-right .gif-box-bottom {
   position: absolute;
   bottom: 10%; /* Adjust to move the bottom GIF down/up */
-  left: -11%;
+  left: -7.9%;
 }
 
 .gif-box img {
@@ -1132,18 +1132,18 @@ margin: 10px 0;
 
 .fondoXcoti .gif-container-left,
 .fondoXcoti .gif-container-right {
-  width: 250px; /* Ensuring the correct width for the GIFs */
+  width: 350px; /* Ensuring the correct width for the GIFs */
   height: 85%; /* Make sure the containers take up the full height */
 }
 
 .gif-position1{
   position: absolute;
   top: 55%;
-  left: 30%;
+  left: 27%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 2rem;
- /*background-color: rgba(0, 0, 0, 0.5);*/
+  /*background-color: rgba(0, 0, 0, 0.5);*/
   padding: 10px;
   border-radius: 5px;
 }
@@ -1151,7 +1151,7 @@ margin: 10px 0;
 .gif-position2{
   position: absolute;
   top: 55%;
-  left: 70%;
+  left: 78%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 2rem;
