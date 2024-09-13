@@ -858,6 +858,77 @@ margin: 10px 0;
     align-items: center;
     padding-right: 0px;
   }
+
+  .gif-container-left .gif-box-top,
+.gif-container-right .gif-box-top {
+  position: absolute;
+  top: 10%; /* Adjust to move the top GIF down/up */
+  left: -11%;
+}
+
+.gif-container-left .gif-box-bottom,
+.gif-container-right .gif-box-bottom {
+  position: absolute;
+  bottom: 10%; /* Adjust to move the bottom GIF down/up */
+  left: -11%;
+}
+
+.gif-box img {
+  width: auto;  /* Adjust size as needed */
+  height: auto;
+  border-radius: 8px; /* Optional styling for the GIFs */
+}
+
+/* Positioning the left and right containers */
+.gif-container-left {
+  left: 10%;  /* Adjust to move it further inside/outside */
+}
+
+.gif-container-right {
+  right: 5%;  /* Adjust to move it further inside/outside */
+}
+
+.fondoXcoti .gif-container-left,
+.fondoXcoti .gif-container-right {
+  width: 150px !important; /* Ensuring the correct width for the GIFs */
+  height: 85%  !important; /* Make sure the containers take up the full height */
+}
+
+.gif-position1{
+  position: absolute;
+  top: 55%;
+  left: 25% !important;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+ /*background-color: rgba(0, 0, 0, 0.5);*/
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.gif-position2{
+  position: absolute;
+  top: 55%;
+  left: 75% !important;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+/*background-color: rgba(0, 0, 0, 0.5);*/
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.gif-container-left .gif-container-right img{
+  width: 100%;
+  height: 100%;
+}
+
+.gif-box-top img, 
+.gif-box-bottom img {
+  width: 180px !important; /* O el tamaño que desees */
+  height: auto;
+}
+
 }
 
 
@@ -1068,11 +1139,11 @@ margin: 10px 0;
 .gif-position1{
   position: absolute;
   top: 55%;
-  left: 10%;
+  left: 30%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 2rem;
- background-color: rgba(0, 0, 0, 0.5);
+ /*background-color: rgba(0, 0, 0, 0.5);*/
   padding: 10px;
   border-radius: 5px;
 }
@@ -1080,11 +1151,31 @@ margin: 10px 0;
 .gif-position2{
   position: absolute;
   top: 55%;
-  left: 90%;
+  left: 70%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 2rem;
- background-color: rgba(0, 0, 0, 0.5);
+ /*background-color: rgba(0, 0, 0, 0.5);*/
   padding: 10px;
   border-radius: 5px;
+}
+
+.fondoXcoti .gif-container-left ::before,
+.fondoXcoti .gif-container-right ::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255, 0.6);
+  /* Ajusta la opacidad y color aquí */
+  z-index: 0;
+  /* Coloca esta capa debajo del contenido */
+}
+
+.fondoXcoti .gif-container-left img,
+.fondoXcoti .gif-container-right img{
+  width: 100%;
+  height: 100%;
 }
